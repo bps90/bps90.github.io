@@ -22,3 +22,9 @@ Frequentemente são encontrados problemas computacionais de grande porte nas ár
 **Keywords**: Processamento Paralelo, Fractal De Mandelbroot, GPU.
 **Founding agency**: FAPESB 2010/2011.
 {: style="text-align: justify;"}
+
+
+### Justify Align
+
+This is a paragraph. It is justify aligned. It gets really mad when people associate it with Justin Timberlake. Typically, justified is pretty straight laced. It likes everything to be in it's place and not all cattywampus like the rest of the aligns. I am not saying that makes it better than the rest of the aligns, but it does tend to put off more of an elitist attitude.
+{: style="text-align: justify;"}
