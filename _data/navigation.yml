@@ -1,13 +1,11 @@
 # main links
 main:
-  - title: "Quick-Start Guide"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
   - title: "Contact"
     url: "#"
   - title: "About"
-    url: "#"
+    url: "https://bps90.github.io/about/"
   - title: Publications
-    url: "#"
+    url: "https://bps90.github.io/publications/"
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"

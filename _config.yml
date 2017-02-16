@@ -78,7 +78,7 @@ analytics:
 # Site Author
 author:
   name             : "Bruno Pereira dos Santos"
-  avatar           : /assets/image/bio-logo.jpg # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : /assets/images/bio-logo.jpg # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Ph.D. student on computer science at DCC-UFMG."
   location         : "Belo Horizonte - MG - Brazil"
   email            : "bruno.ps@dcc.ufmg.br"
