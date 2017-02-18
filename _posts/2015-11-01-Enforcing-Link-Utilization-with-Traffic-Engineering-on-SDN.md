@@ -7,11 +7,8 @@ comments: true
 categories:
   - papers
 tags:
-  - Mandelbrot
-  - Fractal
-  - GPU
-  - CUDA
-  - OpenMP
+  - SDN
+  - Load balancy
 sidebar:
   - title: "Files"
     text: "[PDF](/assets/files/2015-11-01-Link-balancing.pdf){: .btn .btn--success}"
@@ -28,16 +25,9 @@ We propose a traffic engineering solution using Software De- fined Networks. Our
 Single link bottleneck is a problem that can be solved with over provisioning but wasting resources. We propose an alternative solution and performed our experiments on a commercial OpenFlow Switch. The solution met our goal of enforcing link utilization through traffic division. Using three links, we achieved in the worst case 37% more throughput, in the best case almost 57% more compared with a single link.
 {: style="text-align: justify;"}
 
-**Keywords**: SDN, Traffic Engineering, Network Management, OpenFlow.
-
-**Founding agency**: CNPq.
-
 ### Authors
 > Erik de Britto e Silva, Gustavo Pantuza, Frederico Sampaio, Bruno P. Santos, Luiz F. M. Vieira, Marcos A. M. Vieira, Daniel Macedo
 
 #### Contatcs: {erik, pantuza, fredmbs, bruno.ps, lfvieira, mmvieira, damacedo}@dcc.ufmg.br
 
-
-
-
-
+###### **Founding agency**: CNPq.

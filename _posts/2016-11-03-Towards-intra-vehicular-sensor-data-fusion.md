@@ -7,11 +7,9 @@ comments: true
 categories:
   - papers
 tags:
-  - Mandelbrot
-  - Fractal
-  - GPU
-  - CUDA
-  - OpenMP
+  - ITS
+  - Data Fusion
+  - Data Science
 sidebar:
   - title: "Files"
     text: "[PDF](/assets/files/2016-11-03-ITSC-2016.pdf){: .btn .btn--success} [IEEE](/assets/files/2016-11-3-ITSC-2016.pdf){: .btn} [Talk](#){: .btn .btn--info}"
@@ -22,16 +20,9 @@ sidebar:
 Urban mobility aspects have become a challenge with the constant growth of global population. In the same time, more data has become available, which allows new information technologies to improve the mobility systems, especially the transportation system. Thus, a low cost strategy to handle these issues, rises as a new concept named ITS – Intelligent Transportation Systems. These systems depend on various data types and sources, and aggregating it is an important task, which can be accomplished by performing heterogeneous data fusion. In this work, we conducted an exploratory analysis over real vehicular data to show for each listed data issues (i.e imperfection, correlation, inconsistencies, among others) which of them have been found in our data set. Indeed, we found out several issues in the data implying that they must be treated before fusion process. As future extensions of this work, we will apply heterogeneous data fusion techniques to enhance, for example vehicular mobility traces by adding contextual information such as traffic conditions and driver behavior.
 {: style="text-align: justify;"}
 
-**Keywords**: WSN, Routing, Centrality.
-
-**Founding agency**: CNPq.
-
 ### Authors
 > Paulo H. L. Rettore, Bruno P. Santos, Andre B. Campolina, Leandro A. Villas, and Antonio A. F. Loureiro.
 
 #### Contatcs: {rettore, bruno.ps, andre.campolina, loureiro}@dcc.ufmg.br, leandro@ic.unicamp
 
-
-
-
-
+###### **Founding agency**: CNPq.
