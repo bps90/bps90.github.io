@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en"
-title                    : "<i class='fa fa-terminal' aria-hidden='true'></i> Bruno P. S.<span id='cursorblink'>|</span>"
+title                    : "Bruno P. S.<span id='cursorblink'>|</span>"
 title_separator          : "|"
 name                     : "Bruno Pereira dos Santos"
 description              : "This is a Bruno Pereira dos Santos home page!"
