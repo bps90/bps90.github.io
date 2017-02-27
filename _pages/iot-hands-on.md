@@ -94,7 +94,10 @@ Estes comandos acabam por executar o programa `tunslip6`. O programa configura u
 O `tunslip6` apresentará uma saída semelhante a mostrada na caixa de título Terminal 2 e o Cooja apresentará algo como mostrado na figura ao lado. Agora já é possível verificar se os Tmotes Sky emulados estão acessíveis através de ferramentas como o `ping6`.
 {: style="text-align: justify;"}
 
-{% include figure image_path="/assets/images/sim-border-router.png" alt="Simulation of the border router CONTIKI-OS" caption="Simulation of the border router CONTIKI-OS." %}{: .align-center}
+<figure>
+	<a href="/assets/images/sim-border-router.png"><img src="/assets/images/sim-border-router.png" alt="Simulation of the border router CONTIKI-OS."></a>
+	<figcaption><a href="#" title="">Simulation of the border router CONTIKI-OS.</a></figcaption>
+</figure>
 
 Realize testes com os seguintes comandos:
 
@@ -111,7 +114,10 @@ Em seu navegador, acesse o endereço do roteador de borda `http://[aaaa::212:740
 A rede de exemplo possui três motes e apresenta topologia exibida na figura abaixo, em que `˜:101` é o roteador de borda.
 {: style="text-align: justify;"}
 
-{% include figure image_path="/assets/images/network-topology.png" alt="Network Topology" caption="Network Topology." %}{: .align-center}
+<figure>
+	<a href="/assets/images/network-topology.png"><img src="/assets/images/network-topology.png" alt="Simulation of the border router CONTIKI-OS."></a>
+	<figcaption><a href="#" title="Network Topology.">Network Topology.</a></figcaption>
+</figure>
 
 O Roteador de Borda responderá com:
 
@@ -145,7 +151,10 @@ http://[aaaa::212:7403:3:303]/l
 
 Exemplo de resposta:`http://[aaaa::212:7403:3:303]/l`
 
-{% include figure image_path="/assets/images/websense-response.png" alt="Websense Response" caption="Websense Response." %}{: .align-center}
+<figure>
+	<a href="/assets/images/websense-response.png"><img src="/assets/images/websense-response.png" alt="Simulation of the border router CONTIKI-OS."></a>
+	<figcaption><a href="#" title="Websense Response.">Websense Response.</a></figcaption>
+</figure>
 
 # Erbium (Er) REST: Uma implementação CoAP no Contiki-OS
 

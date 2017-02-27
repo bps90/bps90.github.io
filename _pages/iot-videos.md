@@ -7,7 +7,6 @@ sidebar:
   nav: "sbrc"
 ---
 
-
 ### ERBIUM (ER) REST: UMA IMPLEMENTAÇÃO COAP NO CONTIKI-OS
 
 Erbium (Er) is a low-power REST Engine for Contiki that was developed together with [SICS](http://www.sics.se/nes) (and a rare earth element that is found in the Ytterby mine near Stockholm). The REST Engine includes a comprehensive embedded CoAP implementation, which became the official one for the [Contiki OS](http://www.contiki-os.org/). It supports [RFC 7252](http://tools.ietf.org/html/rfc7252) together with [blockwise transfers](http://tools.ietf.org/html/draft-ietf-core-block) and [observing](http://tools.ietf.org/html/draft-ietf-core-observe).
