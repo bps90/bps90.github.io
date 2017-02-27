@@ -2,8 +2,8 @@
 main:
   - title: "Contact"
     url: "#"
-  - title: "About"
-    url: "/about/"
+  - title: "Bio"
+    url: "/bio/"
   - title: "Publications"
     url: "/publications/"
   - title: "Teaching"
@@ -16,3 +16,20 @@ main:
   #   url: /collection-archive/
   # - title: "Sitemap"
   #   url: /sitemap/
+sbrc:
+  - title: "Conteúdo"
+    children:
+      - title: "Home"
+        url: /papers/Internet-das-coisas-da-teroria-a-pratica/
+      - title: "Livro oficial"
+        url: /assets/files/MinicursosSBRC2016.pdf
+      - title: "Versão estendida"
+        url: "#"
+      - title: "Apresentação"
+        url: "https://www.dropbox.com/s/yhwbe5uzjm0x7ny/apresentacao-BRUNO_v2.pptx?dl=0"
+      - title: "Hands on"
+        url: /iot-hands-on/
+      - title: "Leitura extra"
+        url: /iot-leitura-extra/
+      - title: "Vídeos"
+        url: /iot-videos/
