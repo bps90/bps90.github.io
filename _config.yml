@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en"
-title                    : "Bruno P. S."
+title                    : "<i class='fa fa-terminal' aria-hidden='true'></i> Bruno P. S.<span id='cursorblink'>|</span>"
 title_separator          : "|"
 name                     : "Bruno Pereira dos Santos"
 description              : "This is a Bruno Pereira dos Santos home page!"
@@ -18,23 +18,23 @@ teaser                   : "/assets/images/default-teaser.jpg" # path of fallbac
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
-  provider               : "staticman" # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
+  provider               : staticman # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
   disqus:
     shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   discourse:
     server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
   facebook:
     # https://developers.facebook.com/docs/plugins/comments
-    appid                :
+    appid                : bruno.ps2
     num_posts            : # 5 (default)
-    colorscheme          : # "light" (default), "dark"
+    colorscheme          : "dark" #  "light" (default), "dark"
 staticman:
   allowedFields          : ['name', 'email', 'url', 'message']
   branch                 : "master"
   commitMessage          : "New comment."
   filename               : comment-{@timestamp}
   format                 : "yml"
-  moderation             : false
+  moderation             : true
   path                   : "docs/_data/comments/{options.slug}" # "/_data/comments/{options.slug}" (default)
   requiredFields         : ['name', 'email', 'message']
   transforms:
@@ -57,7 +57,7 @@ yandex_site_verification :
 twitter:
   username               :
 facebook:
-  username               :
+  username               : bruno.ps2
   app_id                 :
   publisher              :
 og_image                 : /assets/images/bio-log.png # Open Graph/Twitter default site image
@@ -243,7 +243,7 @@ defaults:
       author_profile: true
       read_time: true
       comments: true
-      share: true
+      share: false
       related: true
   # _pages
   - scope:

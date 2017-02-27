@@ -1,0 +1,28 @@
+#cursorblink {
+    color: #50565b;
+    background: #50565b;
+    font-size: 18px;
+    position: relative;
+    bottom: 3px;
+    margin-left: 5px;
+    
+    -webkit-animation-name: cursor;  
+    -webkit-animation-iteration-count: infinite;  
+    -webkit-animation-timing-function: cubic-bezier(1.0,0,0,1.0);
+    -webkit-animation-duration: 1s;
+    
+    -moz-animation-name: cursor;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: cubic-bezier(1, 0, 0, 1);
+    -moz-animation-duration: 1s;
+}
+
+@-webkit-keyframes cursor {  
+  from { opacity: 1.0; }
+  to { opacity: 0.0; }
+}
+
+@-moz-keyframes cursor {  
+  from {opacity: 1.0;}
+  to {opacity: 0.0;}
+}
