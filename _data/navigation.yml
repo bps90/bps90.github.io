@@ -1,13 +1,12 @@
 # main links
 main:
-  - title: "<i class='fa fa-envelope-o' aria-hidden='true'></i> Contact"
+  - title: "Contact"
     url: "#"
-  - title: "<i class='fa fa-smile-o' aria-hidden='true'></i> Bio"
+  - title: "Bio"
     url: "/bio/"
-  - title: "<i class='fa fa-newspaper-o' aria-hidden='true'></i> Publications"
+  - title: "Publications"
     url: "/publications/"
-  - title: "<i class='fa fa-graduation-cap' aria-hidden='true'></i>
- Teaching"
+  - title: "Teaching"
     url: "/teaching/"
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
