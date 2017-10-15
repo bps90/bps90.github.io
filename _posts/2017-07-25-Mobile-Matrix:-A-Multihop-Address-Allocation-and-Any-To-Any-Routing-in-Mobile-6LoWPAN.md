@@ -15,7 +15,7 @@ tags:
   - Any-to-any
 sidebar:
   - title: "Files"
-    text: "[PDF](/assets/files/2017-07-25-mswim-2017.pdf){: .btn .btn--success} [ACM-DL](https://doi.org/10.1145/3132114.3132126){: .btn} [Talk](#){: .btn .btn--info}"
+    text: "[PDF](/assets/files/2017-07-25-mswim-2017.pdf){: .btn .btn--success} [ACM-DL](http://dx.doi.org/10.1145/3132114.3132126){: .btn .btn--info}"
     image: /assets/images/mobile-matrix-mswim-2017.png
 
 ---
