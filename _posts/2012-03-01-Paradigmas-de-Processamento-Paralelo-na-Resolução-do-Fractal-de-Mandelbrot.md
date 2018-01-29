@@ -19,9 +19,9 @@ sidebar:
 
 ---
 
+The diverse knowledge area such as engineering, bioinformatics or science needs a great computational power to solve their problems. In this subject, parallel processing is the best solution, this paper has the objective to compare the paradigms of parallel processing (Distributed and multicores CPUs and GPU) to resolve a known mathematical problem, the plot of Mandelbrot’s Fractal, when a fractal image need to be produced in a high resolution (1200×1200 pixel) or higher, traditional techniques of sequential processing are overly slow. So option will be presented to solve this problem.
+{: style="text-align: justify;"}
+
 > Bruno Pereira dos Santos and Dany Sanchez Dominguez.
 #### Contatcs: bruno.ps@live.com, dsdominguez@gmail.com
 ###### **Founding agency**: FAPESB 2011/2012.
-
-The diverse knowledge area such as engineering, bioinformatics or science needs a great computational power to solve their problems. In this subject, parallel processing is the best solution, this paper has the objective to compare the paradigms of parallel processing (Distributed and multicores CPUs and GPU) to resolve a known mathematical problem, the plot of Mandelbrot’s Fractal, when a fractal image need to be produced in a high resolution (1200×1200 pixel) or higher, traditional techniques of sequential processing are overly slow. So option will be presented to solve this problem.
-{: style="text-align: justify;"}

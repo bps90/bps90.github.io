@@ -19,9 +19,9 @@ sidebar:
 
 ---
 
+In many areas of science and engineering large computational problems are common. Parallel processing techniques are use to solve this problems. This article show the characteristics of parallel processing using graphics cards from Nvidia, with the help of CUDA framework.The CUDA/GPU techniques will be applied to the generation of Mandelbrot’s fractal problem. We will show serial and parallel implementations, as well as validation of codes and comparative performance between approaches.
+{: style="text-align: justify;"}
+
 > Bruno Pereira dos Santos and Dany Sanchez Dominguez.
 #### Contatcs: bruno.ps@live.com, dsdominguez@gmail.com
 ###### **Founding agency**: PIBIC-CNPq.
-
-In many areas of science and engineering large computational problems are common. Parallel processing techniques are use to solve this problems. This article show the characteristics of parallel processing using graphics cards from Nvidia, with the help of CUDA framework.The CUDA/GPU techniques will be applied to the generation of Mandelbrot’s fractal problem. We will show serial and parallel implementations, as well as validation of codes and comparative performance between approaches.
-{: style="text-align: justify;"}
