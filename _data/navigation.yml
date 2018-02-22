@@ -17,7 +17,7 @@ main:
   # - title: "Sitemap"
   #   url: /sitemap/
 sbrc:
-  - title: "Conteúdo"
+  - title: "Menu"
     children:
       - title: "Home"
         url: /papers/Internet-das-coisas-da-teroria-a-pratica/
@@ -33,3 +33,13 @@ sbrc:
         url: /iot-leitura-extra/
       - title: "Vídeos"
         url: /iot-videos/
+
+mmatrix-journal:
+  - title: "Menu"
+    children:
+      - title: "Home"
+        url: /papers/Mobile-Matrix-Routing-under-Mobility-in-IoT-IoMT-and-Social-IoT/
+      - title: "PDF"
+        url: /#
+      - title: "Code"
+        url: /mmatrix-code/
