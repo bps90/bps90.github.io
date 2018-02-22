@@ -14,7 +14,7 @@ tags:
   - Data-collection
 sidebar:
   - title: "Files"
-    text: "[PDF](/assets/files/2015-03-09-XCTP.pdf){: .btn .btn--success} [IEEE-DOI](10.1109/WCNC.2015.7127692){: .btn} [Talk PDF](https://www.dropbox.com/s/j42c8hc4uv9jb8j/xctp-presentation-wcnc-rev.pptx?dl=0){: .btn .btn--info}"
+    text: "[PDF](/assets/files/2015-03-09-XCTP.pdf){: .btn .btn--success}{: target=\"_blank\"} [IEEE-DOI](10.1109/WCNC.2015.7127692){: .btn} [Talk PDF](https://www.dropbox.com/s/j42c8hc4uv9jb8j/xctp-presentation-wcnc-rev.pptx?dl=0){: .btn .btn--info}{: target=\"_blank\"}"
     image: /assets/images/xctp.png
 
 ---

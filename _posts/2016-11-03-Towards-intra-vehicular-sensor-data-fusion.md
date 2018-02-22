@@ -12,7 +12,7 @@ tags:
   - Data Science
 sidebar:
   - title: "Files"
-    text: "[PDF](/assets/files/2016-11-03-ITSC-2016.pdf){: .btn .btn--success} [IEEE](/assets/files/2016-11-3-ITSC-2016.pdf){: .btn} [Talk](#){: .btn .btn--info}"
+    text: "[PDF](/assets/files/2016-11-3-ITSC-2016.pdf){: .btn .btn--success}{: target=\"_blank\"} [IEEE](/assets/files/2016-11-3-ITSC-2016.pdf){: .btn}{: target=\"_blank\"} [Talk](#){: .btn .btn--info}{: target=\"_blank\"}"
     image: /assets/images/itsc-2016.png
 
 ---

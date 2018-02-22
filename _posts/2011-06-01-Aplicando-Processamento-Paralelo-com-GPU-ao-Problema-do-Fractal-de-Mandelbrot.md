@@ -14,7 +14,7 @@ tags:
   - OpenMP
 sidebar:
   - title: "Files"
-    text: "[PDF](/assets/files/2011-06-01-ERBASE-2011.pdf){: .btn .btn--success} [Talk PDF](/assets/files/2011-06-01-talk-ERBASE-2011.pdf){: .btn .btn--info}"
+    text: "[PDF](/assets/files/2011-06-01-ERBASE-2011.pdf){: .btn .btn--success}{: target=\"_blank\"} [Talk PDF](/assets/files/2011-06-01-talk-ERBASE-2011.pdf){: .btn .btn--info}{: target=\"_blank\"}"
     image: /assets/images/default-teaser.jpg
 
 ---

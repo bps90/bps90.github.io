@@ -13,8 +13,8 @@ tags:
   - OpenMP
 sidebar:
   - title: "Files"
-    text: "[PDF](/assets/files/2011-02-28-Resumo_Seminario_IC_FINAL.pdf){: .btn .btn--success}
- [Talk](/assets/files/2011-02-28Apresentacao_Seminariode_IC_2011_UESC.pdf){: .btn .btn--info}" 
+    text: "[PDF](/assets/files/2011-02-28-Resumo_Seminario_IC_FINAL.pdf){: .btn .btn--success}{: target=\"_blank\"}
+ [Talk](/assets/files/2011-02-28Apresentacao_Seminariode_IC_2011_UESC.pdf){: .btn .btn--info}{: target=\"_blank\"}" 
 
 ---
 

@@ -13,7 +13,7 @@ tags:
   - Data-collection
 sidebar:
   - title: "Files"
-    text: "[IEEE-version-PDF](/assets/files/2015-05-01-cral-ieee-final-sbrc2015.pdf){: .btn .btn--success} [Talk PDF](https://www.dropbox.com/s/irg5igvstbstxxi/apresentacao-sbrc.pptx?dl=0){: .btn .btn--info}"
+    text: "[IEEE-version-PDF](/assets/files/2015-05-01-cral-ieee-final-sbrc2015.pdf){: .btn .btn--success}{: target=\"_blank\"} [Talk PDF](https://www.dropbox.com/s/irg5igvstbstxxi/apresentacao-sbrc.pptx?dl=0){: .btn .btn--info}{: target=\"_blank\"}"
     image: /assets/images/cral.png
 
 ---

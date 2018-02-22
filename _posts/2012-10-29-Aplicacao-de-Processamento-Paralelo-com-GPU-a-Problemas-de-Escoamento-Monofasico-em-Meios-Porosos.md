@@ -14,7 +14,7 @@ tags:
   - OpenMP
 sidebar:
   - title: "Files"
-    text: "[PDF](/assets/files/2012-10-29-SIC_2012.pdf){: .btn .btn--success} [Talk PDF](/assets/files/2012-10-29-Apresentacao-sic-2012.pdf){: .btn .btn--info}"
+    text: "[PDF](/assets/files/2012-10-29-SIC_2012.pdf){: .btn .btn--success}{: target=\"_blank\"} [Talk PDF](/assets/files/2012-10-29-Apresentacao-sic-2012.pdf){: .btn .btn--info}{: target=\"_blank\"}"
     image: /assets/images/default-teaser.jpg
 
 ---

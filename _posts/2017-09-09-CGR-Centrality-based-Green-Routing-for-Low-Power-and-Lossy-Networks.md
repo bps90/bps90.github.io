@@ -14,7 +14,7 @@ tags:
   - Energy
 sidebar:
   - title: "Files"
-    text: "[PDF](/assets/files/2017-09-09-comnet-cgr-2017.pdf){: .btn .btn--success} [ELSEVIER](https://doi.org/10.1016/j.comnet.2017.09.009){: .btn .btn--success}"
+    text: "[PDF](/assets/files/2017-09-09-comnet-cgr-2017.pdf){: .btn .btn--success}{: target=\"_blank\"} [ELSEVIER](https://doi.org/10.1016/j.comnet.2017.09.009){: .btn .btn--success}{: target=\"_blank\"}"
     image: /assets/images/comnet-cgr-2017.png
 
 ---

@@ -11,7 +11,7 @@ tags:
   - Load balancy
 sidebar:
   - title: "Files"
-    text: "[PDF](/assets/files/2015-11-01-Link-balancing.pdf){: .btn .btn--success}"
+    text: "[PDF](/assets/files/2015-11-01-Link-balancing.pdf){: .btn .btn--success}{: target=\"_blank\"}"
     image: /assets/images/sdn.png
 
 ---

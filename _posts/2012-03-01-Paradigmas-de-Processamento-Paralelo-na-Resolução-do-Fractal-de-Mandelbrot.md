@@ -14,8 +14,8 @@ tags:
   - OpenMP
 sidebar:
   - title: "Files"
-    text: "[PDF](/assets/files/2012-03-12-ERBASE_28-03-12_versao_submetida.pdf){: .btn .btn--success} [Talk PDF](/assets/files/2012-03-12-talk-erbase2012.pdf){: .btn .btn--info}
-    [Talk PPTX](/assets/files/2012-03-12-talk-erbase2012.pptx){: .btn .btn--info}"
+    text: "[PDF](/assets/files/2012-03-12-ERBASE_28-03-12_versao_submetida.pdf){: .btn .btn--success}{: target=\"_blank\"} [Talk PDF](/assets/files/2012-03-12-talk-erbase2012.pdf){: .btn .btn--info}{: target=\"_blank\"}
+    [Talk PPTX](/assets/files/2012-03-12-talk-erbase2012.pptx){: .btn .btn--info}{: target=\"_blank\"}"
 
 ---
 

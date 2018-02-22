@@ -12,7 +12,7 @@ tags:
   - Routing
 sidebar:
   - title: "Files"
-    text: "[PDF](/assets/files/2017-05-15-sbrc-minicurso-its.pdf){: .btn .btn--success} [Talk PDF ~150Mb](http://homepages.dcc.ufmg.br/~fdcunha/MinicursoSBRC.pdf){: .btn .btn--info}  [Site](http://homepages.dcc.ufmg.br/~fdcunha/){: .btn .btn--info} "
+    text: "[PDF](/assets/files/2017-05-15-sbrc-minicurso-its.pdf){: .btn .btn--success}{: target=\"_blank\"} [Talk PDF ~150Mb](http://homepages.dcc.ufmg.br/~fdcunha/MinicursoSBRC.pdf){: .btn .btn--info}{: target=\"_blank\"}  [Site](http://homepages.dcc.ufmg.br/~fdcunha/){: .btn .btn--info}{: target=\"_blank\"} "
     image: /assets/images/minicurso-sbrc-2017.png
 
 ---

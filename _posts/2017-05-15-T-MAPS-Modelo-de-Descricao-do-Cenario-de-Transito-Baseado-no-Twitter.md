@@ -12,7 +12,7 @@ tags:
   - Routing
 sidebar:
   - title: "Files"
-    text: "[PDF](/assets/files/2017-05-15-sbrc-t-maps.pdf){: .btn .btn--success} [Talk PDF](/assets/files/2017-05-15-sbrc-t-maps-talk.pdf){: .btn .btn--info}"
+    text: "[PDF](/assets/files/2017-05-15-sbrc-t-maps.pdf){: .btn .btn--success}{: target=\"_blank\"} [Talk PDF](/assets/files/2017-05-15-sbrc-t-maps-talk.pdf){: .btn .btn--info}{: target=\"_blank\"}"
     image: /assets/images/t-maps.png
 
 ---

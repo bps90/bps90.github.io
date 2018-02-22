@@ -15,7 +15,7 @@ tags:
   - Parallel computing
 sidebar:
   - title: "Files"
-    text: "[PDF](/assets/files/2014-02-29-wccm-eccm-ecfd2014.pdf){: .btn .btn--success}"
+    text: "[PDF](/assets/files/2014-02-29-wccm-eccm-ecfd2014.pdf){: .btn .btn--success}{: target=\"_blank\"}"
 
 ---
 
