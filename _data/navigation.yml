@@ -2,6 +2,8 @@
 main:
   - title: "Bio"
     url: "/bio/"
+  - title: "Blog"
+    url: "/blog/"
   - title: "Publications"
     url: "/publications/"
   - title: "Teaching"
