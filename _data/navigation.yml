@@ -1,7 +1,5 @@
 # main links
 main:
-  - title: "Contact"
-    url: "#"
   - title: "Bio"
     url: "/bio/"
   - title: "Publications"
