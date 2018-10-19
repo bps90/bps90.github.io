@@ -1,3 +1,31 @@
+## Unreleased
+
+### Enhancements
+
+* Update [jekyll-toc](https://github.com/allejo/jekyll-toc) to `v1.0.5`.
+* Support heading levels 1-6 in table of contents with proper indentation styling. [#1782](https://github.com/mmistakes/minimal-mistakes/issues/1782)
+* Use relative links for masthead navigation menu items when possible. [#1784](https://github.com/mmistakes/minimal-mistakes/pull/1784)
+* Add `.emoji` class to author sidebar to normalize image sizes. [#1780](https://github.com/mmistakes/minimal-mistakes/pull/1780)
+* Update Staticman commit message to include commentor's name.
+* Improve side navigation spacing in relation to masthead.
+* Style archive links with appropriate link color.
+* Adjust feature row spacing and font-sizes.
+* Use sentence case and increase font-sizes for improved readability in table of contents.
+* Add `{{ content }}` to `home` layout. [#1775](https://github.com/mmistakes/minimal-mistakes/pull/1775)
+
+## [4.12.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.12.1)
+
+### Enhancements
+
+* Add missing French localized UI text strings. [#1769](https://github.com/mmistakes/minimal-mistakes/pull/1769) [#1741](https://github.com/mmistakes/minimal-mistakes/pull/1741)
+* Update Font Awesome to version [`5.2.0`](https://github.com/FortAwesome/Font-Awesome/blob/master/CHANGELOG.md). [#1754](https://github.com/mmistakes/minimal-mistakes/pull/1754)
+* Add documentation note to update root `Gemfile` when forking theme.
+
+### Bug Fixes
+
+* Remove slash at the beginning of `path` in staticman.yml example. [#1772](https://github.com/mmistakes/minimal-mistakes/pull/1772)
+* Fix `read_time` logic in header image overlay. [#1756](https://github.com/mmistakes/minimal-mistakes/pull/1756)
+
 ## [4.12.0](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.12.0)
 
 ### Enhancements
@@ -57,23 +85,6 @@
 * Activate Algolia search for documentation site. [#1570](https://github.com/mmistakes/minimal-mistakes/issues/1570)
 * Add missing German translations. [#1577](https://github.com/mmistakes/minimal-mistakes/pull/1577)
 * Add support for Google Analytics with global site tag (gtag.js) [#1563](https://github.com/mmistakes/minimal-mistakes/pull/1563)
-
-### Bug Fixes
-
-* Focus Algolia search input after clicking on search toggle.
-
-## [4.10.0](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.10.0)
-
-### Enhancements
-
-* Add support for [Algolia](https://www.algolia.com/) search provider ([see demo](https://mmistakes.github.io/minimal-mistakes-algolia-search/)). [#1416](https://github.com/mmistakes/minimal-mistakes/issues/1416)
-
-## [4.9.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.9.1)
-
-### Enhancements
-
-* Update jQuery to version `3.3.1`. [#1491](https://github.com/mmistakes/minimal-mistakes/issues/1491)
-* Add link to jekyll-algolia's `files_to_exclude` documentation.
 
 ### Bug Fixes
 
