@@ -6,7 +6,7 @@ permalink: /bio/
 
 #### Short Bio
 
-He holds a B.S. in Computer Science from [Universidade Estadual de Santa Cruz - UESC](http://nbcgib.uesc.br/nbcgib/) (2013), a Master degree in Computer Science from [Universidade Federal de Minas Gerais - UFMG](http://www.dcc.ufmg.br/dcc/) (2015), and now He is a Ph.D. candidate in Computer Science from UFMG (2009). Currently, he is a Professor at UFOP. His main research interest areas are Mobile computing, Ubiquitous computing, Computer Networks, Internet of Things (IoT), Wireless Sensor Networks (WSN), Software Defined Networks (SDN), 5G Networks, Distributed systems/algorithms, Parallel computing/programming, Cyber-physical systems, software, and tools.
+He holds a B.S. in Computer Science from [Universidade Estadual de Santa Cruz - UESC](http://www.uesc.br/){: target="\_blank"} (2013), a Master degree in Computer Science from [Universidade Federal de Minas Gerais - UFMG](http://www.dcc.ufmg.br/dcc/){: target="\_blank"} (2015), and now He is a Ph.D. candidate in Computer Science from UFMG (2009). Currently, he is a Professor at UFOP. His main research interest areas are Mobile computing, Ubiquitous computing, Computer Networks, Internet of Things (IoT), Wireless Sensor Networks (WSN), Software Defined Networks (SDN), 5G Networks, Distributed systems/algorithms, Parallel computing/programming, Cyber-physical systems, software, and tools.
 {: style="text-align: justify; font-size: 14px;"}
 
 <!--
@@ -18,15 +18,15 @@ I received Master degree at [DCC-UFMG](http://www.dcc.ufmg.br/dcc/) on March, 20
 -->
 #### Personal
 
-I'm originally from the *best city of the entire world (rsrs)* [**Jequié!!!**](https://pt.wikipedia.org/wiki/Jequi%C3%A9). I like so much [**Salvador**](https://en.wikipedia.org/wiki/Salvador,_Bahia) and [**Belo Horizonte**](https://en.wikipedia.org/wiki/Belo_Horizonte) as well. Besides academic interests, I enjoy:
+I'm originally from the *best city of the entire world (rsrs)* [**Jequié!!!**](https://pt.wikipedia.org/wiki/Jequi%C3%A9){: target="\_blank"}. I like so much [**Ilhéus**](https://en.wikipedia.org/wiki/Ilh%C3%A9us){: target="\_blank"} and [**Belo Horizonte**](https://en.wikipedia.org/wiki/Belo_Horizonte){: target="\_blank"} as well. Besides academic interests, I enjoy:
 {: style="text-align: justify; font-size: 14px;"}
 
-* [Bahiana Food](https://pt.wikipedia.org/wiki/Culin%C3%A1ria_da_Bahia)
+* [Baiana Food](https://pt.wikipedia.org/wiki/Culin%C3%A1ria_da_Bahia){: target="\_blank"}
 * Watch good movies and series!
 * Keeping myself informed
 * Travel and meet people
 * Programming and related 
-	+ Actually I'm have some skills for programming in R, C, CUDA, Java, Bash, Python, TinyOS (C-Like), little bit of Pearl, and others.
-		- I've understood since 2013 that research requires statistical tools. So, I recommend learning at least one, ex: R.
-	+ See [PEP 20 -- The Zen of Python](https://www.python.org/dev/peps/pep-0020/)
+	+ I have some skills in servel programming lang. For intance, R, C, CUDA, Java, Bash, Python, TinyOS (C-Like), little bit of Pearl, and others.
+		- I've understood since 2009 that research requires statistical and programming tools. So, I recommend two languages R and Python.
+		- See [PEP 20 -- The Zen of Python](https://www.python.org/dev/peps/pep-0020/){: target="\_blank"}
 {: style="text-align: justify; font-size: 14px;"}

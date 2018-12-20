@@ -269,6 +269,7 @@ defaults:
       comments: true
       share: false
       related: true
+      classes: wide
   # _pages
   - scope:
       path: ""
@@ -276,6 +277,7 @@ defaults:
     values:
       layout: single
       author_profile: true
+      classes: wide
   # _teaching
   - scope:
       path: ""
@@ -284,6 +286,7 @@ defaults:
       layout: single
       author_profile: true
       share: true
+      classes: wide
   # _blog
   - scope:
       path: ""
@@ -292,6 +295,7 @@ defaults:
       layout: single
       author_profile: true
       share: true
+      classes: wide
 
 collections:
   teaching:
