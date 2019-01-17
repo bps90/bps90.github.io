@@ -26,7 +26,7 @@ I'm originally from the *best city of the entire world (rsrs)* [**Jequié!!!**](
 * Keeping myself informed
 * Travel and meet people
 * Programming and related 
-	+ I have some skills in servel programming lang. For intance, R, C, CUDA, Java, Bash, Python, TinyOS (C-Like), little bit of Pearl, and others.
+	+ I have some skills in several programming lang. For intance, R, C, CUDA, Java, Bash, Python, TinyOS (C-Like), little bit of Pearl, and others.
 		- I've understood since 2009 that research requires statistical and programming tools. So, I recommend two languages R and Python.
 		- See [PEP 20 -- The Zen of Python](https://www.python.org/dev/peps/pep-0020/){: target="\_blank"}
 {: style="text-align: justify; font-size: 14px;"}
