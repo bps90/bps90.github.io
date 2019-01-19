@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: archive
 author_profile: true
 permalink: /
 ---
@@ -21,4 +21,11 @@ I am currently a Ph.D. candidate pursuing a Ph.D. degree at the <a href="http://
 	<li>Parallel programing</li>
 </ul>
 
+<h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
+
+{% for post in paginator.posts %}
+  {% include archive-single.html %}
+{% endfor %}
+
+{% include paginator.html %}
 
