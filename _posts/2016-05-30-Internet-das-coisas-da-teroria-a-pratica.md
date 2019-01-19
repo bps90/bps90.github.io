@@ -29,4 +29,3 @@ Please cite:
 
 > Bruno P. Santos, Lucas A. M. Silva, Clayson S. F. S. Celes, João B. Borges Neto, Bruna S. Peres, Marcos Augusto M. Vieira, Luiz Filipe M. Vieira, Olga N. Goussevskaia e Antonio A. F. Loureiro
 #### Contacts  {bruno.ps, lams, claysonceles, joaoborges, bperes, mmvieira, lfvieira, olga, loureiro}@dcc.ufmg.br
-###### **Founding agency**: FAPESB 2010/2011.
