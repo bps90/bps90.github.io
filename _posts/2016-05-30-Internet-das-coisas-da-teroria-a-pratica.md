@@ -4,7 +4,7 @@ author_profile: false
 header:
   teaser: "/assets/images/sbrc-2016.png"
 categories:
-  - papers
+  - Papers
 tags:
   - IoT
   - Computação ubíqua

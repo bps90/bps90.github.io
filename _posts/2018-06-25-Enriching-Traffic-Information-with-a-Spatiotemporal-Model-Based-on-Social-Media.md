@@ -5,7 +5,7 @@ header:
 author_profile: false
 comments: true
 categories:
-  - papers
+  - Papers
 tags:
   - ITS
   - MAPS

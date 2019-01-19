@@ -10,6 +10,8 @@ main:
     url: "/teaching/"
   - title: "FAQ"
     url: "/faq/"
+  - title: "All posts"
+    url: "/categories/"
   #- title: "Terms &amp; Privacy Policy"
   #  url: /terms/
   # - title: "About"

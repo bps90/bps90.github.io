@@ -4,7 +4,7 @@ author_profile: false
 header:
   teaser: "/assets/images/fractal-mandelbrot.png"
 categories:
-  - papers
+  - Papers
 tags:
   - Mandelbrot
   - Fractal

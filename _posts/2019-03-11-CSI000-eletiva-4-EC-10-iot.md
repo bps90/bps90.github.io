@@ -1,13 +1,14 @@
 ---
 title: "CSI000 Eletiva 4 EC 10 - Internet of Things"
+header:
+  teaser: "/assets/images/teaching-icon.png"
 categories:
-  - teaching
+  - Lectures
 tags:
   - IoT
   - CSI000
   - Eletiva
 ---
-
 
 
 Office: **LOC. HERE AND AVAILABILITY**

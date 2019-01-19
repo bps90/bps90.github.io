@@ -5,7 +5,7 @@ header:
   teaser: "/assets/images/cuda.png"
 comments: true
 categories:
-  - papers
+  - Papers
 tags:
   - Mandelbrot
   - Fractal
