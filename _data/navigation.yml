@@ -2,14 +2,16 @@
 main:
   - title: "Bio"
     url: "/bio/"
-  - title: "Blog"
-    url: "/blog/"
+  #- title: "Blog"
+  #  url: "/blog/"
   - title: "Publications"
     url: "/publications/"
   - title: "Teaching"
     url: "/teaching/"
   - title: "FAQ"
     url: "/faq/"
+  #- title: "Terms &amp; Privacy Policy"
+  #  url: /terms/
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"
