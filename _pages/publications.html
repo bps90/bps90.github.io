@@ -1,12 +1,19 @@
 ---
-layout: posts
-title: "Publications"
+title: Publications
+layout: category
 permalink: /publications/
-author_profile: true
+taxonomy: papers
+entries_layout: grid
+classes: wide
 ---
 
-<div class="grid__wrapper">
-  {% for post in site.posts %}
-    <!--{% include archive-single.html type="grid" %}-->
+<ul class="taxonomy__index">
+  {% assign postsInYear = site.categories[page.taxonomy] | group_by_exp: 'post', 'post.date | date: "%Y"' %}
+  {% for year in postsInYear %}
+	    <li>
+	      <a href="#{{ year.name }}">
+	        <strong>{{ year.name }}</strong> <span class="taxonomy__count">{{ year.items | size }}</span>
+	      </a>
+	    </li>
   {% endfor %}
-</div>
+</ul>
