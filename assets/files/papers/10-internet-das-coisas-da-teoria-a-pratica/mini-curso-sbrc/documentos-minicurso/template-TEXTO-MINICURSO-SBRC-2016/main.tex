@@ -1,0 +1,117 @@
+%
+% Sample SBC book chapter
+% This is a public-domain file.
+% Charset: ISO8859-1 (latin-1) áéíóúç
+
+% TEXTO de minicurso para o SBRC-2016
+
+%    >> NOVAS DATAS IMPORTANTES <<
+%
+% Registro de propostas: 20/11/2015 (OK)
+% Envio de Propostas: 06/12/2015 (OK)
+% Comunicação dos resultados: 18/01/2016 (OK)
+% Entrega dos capítulos: 21/03/2016
+
+
+
+\documentclass{SBCbookchapter}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[brazilian]{babel}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{url}
+%\usepackage[square, authoryear]{natbib}
+\usepackage{enumitem}
+%\setcounter{secnumdepth}{5}
+%\setlength{\abovecaptionskip}{0cm}
+
+
+\title{Internet das Coisas: da Teoria à Prática.}
+%Connect and manage your things and data.
+\author{Bruno P. Santos, Lucas A. M. Silva, Bruna S. Peres, Clayson S. F. S.  
+Celes, João B. Borges Neto, Marcos Augusto M. Vieira, Luiz Filipe M. Vieira, 
+Olga 
+N. Goussevskaia e Antonio A. F. Loureiro}
+
+\address{Departamento de Ciência da Computação -- Instituto de Ciências Exatas \linebreak
+Universidade Federal de Minas Gerais (UFMG) -- Belo Horizonte, MG -- Brasil
+\email{\{bruno.ps, lams, bperes, claysonceles, joaoborges, mmvieira, lfvieira, 
+olga, loureiro\}@dcc.ufmg.br}
+}
+
+\hyphenation{de-mons-tra-ções}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+% Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare ex lectus. 
+%  Proin ornare iaculis laoreet. Aenean auctor fringilla ornare. Aenean quis lorem 
+% non purus feugiat malesuada. Phasellus euismod dignissim velit, sit amet euismod 
+% nibh commodo eget. Curabitur leo ligula, egestas quis massa at, lacinia ornare 
+% purus. Nunc placerat, magna eget scelerisque ultrices, leo arcu aliquam diam, ut 
+% semper ex nulla nec nisl. Duis blandit, nibh non sollicitudin rutrum, turpis 
+% magna venenatis felis, at tincidunt neque erat bibendum est. Morbi tempor ut 
+% sapien eget faucibus. In venenatis, orci quis porta cursus, neque velit semper 
+% mi, suscipit condimentum ipsum quam sed velit. Maecenas aliquet lorem justo, 
+% dignissim dictum lorem pharetra ac. Fusce fringilla in augue id tincidunt. 
+% Nullam nec sollicitudin ligula..
+\end{abstract}
+
+\begin{resumo}
+\begin{otherlanguage}{brazilian}
+A proliferação de objetos com capacidade de monitoramento, processamento e 
+comunicação é crescente nos últimos anos. Diante disso, aparece o cenário de 
+Internet das Coisas (Internet of Things - IoT) onde objetos podem se conectar à 
+Internet e prover comunicação entre usuários, dispositivos (D2D), máquinas (M2M) 
+e formarem novas aplicações. Várias questões teóricas e práticas surgem no 
+desenvolvimento de IoT, por exemplo, como conectar esses objetos à Internet e 
+como endereçar os objetos. Aliado a essas perguntas diversos desafios devem ser 
+superados, por exemplo, como lidar com as restrições de processamento, largura 
+de banda e energia dos dispositivos. Neste sentido, novos paradigmas de 
+comunicação e roteamento podem ser explorados. Questões relacionadas ao 
+endereçamento IP e como adaptá-lo precisam ser respondidas. Oportunidades de 
+novas aplicações em uma rede de objetos inteligentes aparecem e, junto com essas 
+aplicações, também surgem novos desafios. 
+
+O objetivo deste minicurso é descrever o estado atual da Internet das Coisas da 
+teoria à prática, e discutir desafios e questões de pesquisa. Através de uma 
+abordagem crítica, é exposto uma visão geral da área, ilustrando soluções 
+parciais e/ou totais propostas na literatura para as questões mencionadas, além 
+de destacar os principais desafios e oportunidades que a área oferece. 
+
+%%%%%%%%%%%%%% O texto abaixo foi comentado, pois o resumo ficou grande. %%%%%
+
+% Iniciamos mostrando a evolução dos dispositivos embarcados e redes de sensores, 
+% os quais são os blocos básicos de construção dos objetos inteligentes, sempre 
+% pontuando os aspectos que evoluíram para formar o que é hoje a IoT. A seguir, 
+% destacamos o potencial de aplicações possíveis sobre a rede de objetos 
+% inteligentes e os desafios que devem ser enfrentados por essas aplicações, por 
+% exemplo, dados imperfeitos, correlatos, inconsistentes e outros. Finalmente, 
+% discutimos como trabalhar com a IoT, através de demonstração prática, empregando 
+% os conceitos vistos em dispositivos reais e/ou exibindo as ferramentas como, por 
+% exemplo, a instalação da pilha de protocolos de rede em dispositivos de baixa 
+% potência (ex: 6LoWPAN/RPL e CoAP) e uso de ferramentas de gerenciamento 
+% (Middlewares) e análise de dados. Além da descrição prática, discutimos os 
+% desafios e as oportunidades de pesquisa na áreas de IoT.
+
+\end{otherlanguage}
+\end{resumo}
+%os labels sao as iniciais de cada palavra do item
+
+\input{secoes/secao-1/secao-1.tex}
+\input{secoes/secao-2/secao-2.tex}
+\input{secoes/secao-3/secao-3.tex}
+\input{secoes/secao-4/secao-4.tex}
+\input{secoes/secao-5/secao-5.tex}
+\input{secoes/secao-6/secao-6.tex}
+\input{secoes/secao-7/secao-7.tex}
+
+\nocite{*}
+\bibliographystyle{sbc}
+\bibliography{refs}
+
+\end{document}
+

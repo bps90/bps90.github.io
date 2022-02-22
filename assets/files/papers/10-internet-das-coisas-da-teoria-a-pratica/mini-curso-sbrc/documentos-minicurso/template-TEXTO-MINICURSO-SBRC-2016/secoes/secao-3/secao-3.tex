@@ -1,0 +1,104 @@
+% Crie um novo arquivo para cada parte do texto que for escrever.
+% insira esse aquivo na posicao correta da secao. 
+
+\section{Da Teoria aos Softwares e Ambientes de Desenvolvimentos 
+\textcolor{red}{BRUNO / LUCAS / BRUNA (MAX 15 pg)}}
+\label{sec:dtsad}
+
+  \subsection{O SW das Redes de Computadores convencionais X SW para 
+dispositivos inteligentes. \textcolor{red}{BRUNO}}
+    \begin{itemize}
+      \item O SW deve ser pensado levando em considerações as limitações 
+que em geral os dispositivos apresentam
+    \end{itemize}
+
+  \subsection{Paradigmas de comunicação dos dispositivos inteligentes 
+\textcolor{red}{BRUNO/BRUNA}}
+    \begin{itemize}
+      \item Disseminação X Coleta X Par-a-Par
+	\begin{itemize}
+	  \item Como explorar os paradigmas para melhorar o desempenho dos 
+dispositivos?
+	  \item Muitos-para-um Ex: CTP, MultHopLQI...
+	  \item Um-para-muitos: Direct Difusion, Deluxe, DIP/DRIP, 
+CodeDRIP....
+	  \item Qualquer-para-Qualquer: RPL, XCTP, Matrix
+	  \item Localizá-los baseado em seu paradigma através de 
+infográfico
+	  \item Apresentar um comparativo que os diferencia
+	\end{itemize}
+    \end{itemize}
+
+  \subsection{Modelos de conectividade Redes de Objetos inteligentes X IoT  
+\textcolor{red}{BRUNO}}
+    \begin{itemize}
+      \item Autonomous Smart Objects networks - objetos que não requerem 
+nenhuma conexão com a Intetnet (Ex: smart grids)
+      \item Internet of Things - onde objetos inteligentes realmente estão 
+conectados à Internet publica e podem ser acessados diretamente ou através de 
+middlewares.
+    \end{itemize}
+
+  \subsection{Arquitetura TCP-UDP/IP para IoT. Ou o que não pôde ser 
+reutilizado talvez possa ser adaptado \textcolor{red}{LUCAS}}
+    \begin{enumerate}
+      \item IP para Objetos Inteligentes? (Arquitetura TCP-UDP/6LoWPAN)
+      \item Adaptações do IPv6 para chegar ao 6LoWPAN
+      \item Pilhas TCP-UDP/6LowPAN reduzidas
+      \begin{itemize}
+	\item $\mu$IP e lwIP
+      \end{itemize}
+    \end{enumerate}
+  
+  \subsection{Ambientes de desenvolvimento \textcolor{red}{BRUNA}}
+    \begin{itemize}
+      \item Software geralmente deve mais enxuto
+      \item Novas linguagens de programação
+      \item Sistemas Operacionais
+	\begin{enumerate}
+	  \item Contiki
+	  \item TinyOS
+	\end{enumerate}
+      \item Emuladores e Simuladores
+	\begin{enumerate}
+	  \item indicar qual é a diferença entre simulador X emulador
+	  \item NS2/NS3
+	  \item Cooja 
+	  \item Tossim
+	  \item OMNet++/Castalia
+	  \item Sinalgo
+	\end{enumerate}
+    \end{itemize}
+    
+    \subsection{SW suas limitações e desafios que geram 
+\textcolor{red}{LUCAS/BRUNA}}
+      \begin{itemize}
+	\item Problema do Gateway
+	  \begin{itemize}
+	    
+	    \item Onde a ``inteligência'' deve ficar?
+	      \begin{itemize}
+		\item Se no Gateway outras questões surgem: se a conexão 
+for perdida? e se for uma queda temporária? como implementar confirmações entre 
+os dispositivos?)
+		\item Se nos dispositivos: como enfrentar o trade-off com 
+as limitações?
+	      \end{itemize}
+	    
+	    \item Gateway fixo ou diferentes gateways? 
+	    
+	    \item Privacidade e Segurança
+	      \begin{itemize}
+		\item Ex: S e o gateway é um dispositivo de terceiros como
+como manter a troca de informações de modo seguro? Se for um dispositivo de 
+terceiros quais seriam os incentivos alguém transmita seus dados?
+	      \end{itemize}
+	      
+	    \item IP móvel
+	      \begin{itemize}
+		\item Mobility Support in IPv6 RFC 6275
+	      \end{itemize}
+	  \end{itemize}
+      \end{itemize}
+
+% FIM - O Software e ambientes de desenvolvimento

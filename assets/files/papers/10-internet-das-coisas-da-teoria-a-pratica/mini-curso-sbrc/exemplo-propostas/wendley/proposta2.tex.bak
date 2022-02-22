@@ -1,0 +1,128 @@
+%
+% Sample SBC book chapter
+% This is a public-domain file.
+% Charset: ISO8859-1 (latin-1) áéíóúç
+
+% Proposta de minicurso para o SBRC-2015
+
+%    >> DATAS IMPORTANTES <<
+%
+% Registro prévio: até 07/11/2014 - ok
+% Envio das propostas: até 14/11/2014
+% Comunicação de seleção: até 15/12/2014
+% Envio dos capítulos: até 07/03/2015
+
+
+
+\documentclass{SBCbookchapter}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[brazilian]{babel}
+\usepackage{graphicx}
+\usepackage{color}
+%\usepackage[square, authoryear]{natbib}
+%\usepackage{enumitem}
+%\setcounter{secnumdepth}{5}
+%\setlength{\abovecaptionskip}{0cm}
+
+
+\title{Introdução a Rádios Definidos por \textit{Software} com aplica\c{c}ões em GNU Radio}
+
+\author{Wendley S. Silva, Jefferson Rayneres S. Cordeiro, José Marcos S. Nogueira, Daniel F. Macedo, Marcos Augusto M. Vieira, Luiz Filipe M. Vieira}
+
+\address{Departamento de Ciência da Computação -- Instituto de Ciências Exatas \linebreak
+Universidade Federal de Minas Gerais (UFMG) -- Belo Horizonte, MG -- Brasil
+\email{\{wendley, jeff, jmarcos, damacedo, mmvieira, lfvieira\}@dcc.ufmg.br}
+}
+
+\hyphenation{de-mons-tra-ções}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+Software-defined radios (SDR) allows to reduce the amount of communication functions implemented in hardware. Thus, the communication devices become more flexible and easy to be programmed. SDRs are used in experimental research in Computer Networks, as well as prototyping and fast deployment of new communication technologies. This short course will cover introductory concepts of SDR and GNU Radio platform. The course will show the basic concepts of wireless communications and digital transmissions, focusing on aspects from data link layer. Practical applications of SDR, focused on experimental research on wireless networks, such as proposing new features on MAC sublayer, will be demonstrated.
+\end{abstract}
+
+\begin{resumo}
+\begin{otherlanguage}{brazilian}
+% Máximo de 10~linhas cada (abstract e resumo).
+Rádios definidos por software (SDR) permitem reduzir a quantidade de funções de comunicação implementadas em hardware. Desta forma, os dispositivos de comunicação se tornam mais flexíveis e fáceis de serem programados. SDRs são empregados na pesquisa experimental em Redes de Computadores, bem como na prototipagem e implementação rápida de novas tecnologias de comunicação. Este minicurso abordará os conceitos introdutórios de SDR e da plataforma GNU Radio.  O curso apresentará os conceitos básicos de comunicações sem fio e transmissões digitais, focando nos aspectos relativos à camada de enlace. Serão demonstradas aplicações práticas de SDR, focadas na pesquisa experimental em redes sem fio, por exemplo como propor novas funcionalidades na subcamada MAC.
+
+\end{otherlanguage}
+\end{resumo}
+
+\section{Dados gerais}
+\subsection{Objetivos do curso}
+
+Este minicurso objetiva discutir conceitos introdutórios de Rádios Definidos por Software (\textit{Software Defined Radio} - SDR) através de experimentos práticos desenvolvidos com a plataforma GNU Radio e USRPs (\textit{Universal Software Radio Peripheral}) e apresentar as diversas possibilidades de aplicação desse sistema. Ao final do minicurso, o participante terá compreendido conceitos básicos de comunicações sem fio e de transmissões digitais modernas, como OFDM (\textit{Orthogonal Frequency-Division Multiplexing}), MIMO (\textit{Multiple-Input and Multiple-Output}) e sensoriamento de espectro, terá desenvolvido aplicações práticas com o GNU Radio e USRP envolvendo demodulação de sinais FM, troca de mensagens entre nós sensores (IEEE 802.15.4) e incremento de funcionalidades na subcamada de rede MAC. 
+
+A abordagem adotada no minicurso será no estilo \textit{teórico-prática},  sendo a parte prática desenvolvida com uso de computadores e equipamentos de rádio USRP. A metade inicial do curso será focada nos aspectos teóricos de SDR, enquanto na segunda metade iremos apresentar demonstrações e/ou experimentos envolvendo os conceitos e técnicas de comunicação sem fio e redes sem fio. Para isso, serão disponibilizadas e utilizadas máquinas virtuais com o sistema operacional Linux e todos os demais \textit{softwares} necessários para o desenvolvimento em GNU Radio.  Para os exercícios que requerem uso de \textit{hardware} estamos avaliando a viabilidade de execução prática com os USRPs. Essa decisão será baseada na quantidade de alunos inscritos, visto que possuimos uma quantidade limitada de USRPs; caso o número de alunos seja muito grande, iremos apresentar os exemplos práticos como demonstração.
+
+Apesar de SDR ser uma tecnologia que permite trabalharmos em aspectos de baixo nível da comunicação, como técnicas de transmissão e modulação, processamento de sinais, o curso será voltado para aspectos mais próximos do público-alvo do SBRC. Ou seja, daremos prioridade a assuntos referentes às camadas de enlace, e assuntos relativos à camada física serão abordados de forma mais superficial. Para os interessados em se aprofundarem na camada física de redes sem fio, recomendamos o texto do mini-curso de SDR ministrado no SBrT em 2013\footnote{http://www.laps.ufpa.br/aldebaro/sdr2013/}.
+
+\subsection{Perfil do público-alvo}
+
+Este minicurso se destina a profissionais e estudantes de graduação e pós-graduação das áreas de Ciência da Computação, Engenharia Elétrica, Engenharia de Automação, Engenharia da Computação e outras correlatas. Alunos ou profissionais com conhecimento em comunicações digitais podem expandir suas competências com o desenvolvimento das aplicações que serão discutidas e apresentadas com o GNU Radio e USRPs. Espera-se que os alunos tenham conhecimentos de redes de computadores somente. Conhecimentos básicos de processamento de sinais e telecomunicações são bem vindos, mas não são obrigatórios para o entendimento do curso.
+
+
+\section{Estrutura prevista do curso}
+
+O conteúdo do minicurso será distribuído nas seguintes seções, que serão detalhadas a seguir:
+
+\begin{enumerate}
+    \item Introdução
+    \item Arquiteturas e plataformas de desenvolvimento
+    \item Fundamentos de transmissão digital
+    \item Aplicações % MAC
+    \item Conclusões e desafios
+\end{enumerate}
+
+
+\subsection{Desenvolvimento dos capítulos}
+%Para cada tópico/capítulo previsto no item anterior, apresentar um resumo do conteúdo a ser abordado e previsão do número de páginas.
+
+Na \textbf{Introdução} serão apresentadas as perspectivas históricas e as definições e motivações para estudos, pesquisas e aplicações comerciais em SDR utilizando-se o GNU Radio, bem como uma introdução aos sistemas de rádio digital. Daremos uma atenção especial aos rádios cognitivos e aos rádios multi-tecnologia, que são as principais aplicações de SDR. Será apresentada a evolução dos sistemas de rádios programáveis, bem como será discutida a complementaridade dos conceitos de SDR e SDN ({\it Software-Defined Networks}. Iremos concluir o capítulo apresentando uma visão geral de alguns resultados recentes de pesquisa que mostram como o SDR é uma ferramenta essencial para a avaliação de novos conceitos e arquiteturas em redes sem fio. Haverá uma demanda de 6 páginas para esta seção.
+
+Na seção \textbf{Arquiteturas e plataformas de desenvolvimento}, serão discutidas as principais plataformas de \textit{hardware} e de \textit{software}. Iremos indicar como ocorreu a evolução das arquiteturas de SDR, permitindo o seu uso em padrões que exigem maiores frequências e larguras de banda, e como estes podem ser implementados para atingir os requisitos de área de chip e consumo de energia necessários para aplicações móveis (por exemplo para uso em celulares e {\it tablets}). Iremos explorar com maior profundidade as arquiteturas de \textit{software} SODA (\textit{Signal-processing On-Demand Architecture}), SORA (\textit{Microsoft Research Software Radio}), WARP (\textit{Wireless Open-Access Research Platform}) e USRPs, e as propostas de {\it soft-MACs}, bem como o ambiente de desenvolvimento GNU Radio Companion; para isso, serão necessárias 12 páginas. 
+
+Em \textbf{Fundamentos de transmissão digital}, será apresentada uma visão geral de vários conceitos-chave do emprego de transmissão digital de dados, discutindo técnicas de modulação para rádio móvel, equalização e codificação de canal, medidas de decisão e de erro, e uma das principais ferramentas para avaliar o desempenho quantitativo: a taxa de erro de bit. Serão necessárias 14 páginas.
+
+Na seção \textbf{Aplicações}, será apresentado um conjunto de possíveis fluxos de trabalho a fim de permitir que o participante desenvolva sua própria pesquisa. As principais aplicações demonstrativas como demodulação de sinais FM, comunicação entre nós sensores e análise do tráfego de rede, serão descritas e contarão com um passo a passo para suas corretas execuções; serão utilizadas 14 páginas.
+
+Em \textbf{Conclusões e desafios}, serão apresentadas as atuais limitações e a visão de futuro dessa abordagem de comunicação sem fio. Iremos apresentar os desafios de pesquisa em arquiteturas de SDR e em comunicação sem fio. Serão necessárias 3 páginas.
+
+
+\section{Bibliografia utilizada na preparação do curso}
+
+Para a confecção do curso serão utilizadas como principais fontes as referências \linebreak \cite{bhat2012design}, \cite{ulversoy2010software}, \cite{johnson2011software}, \cite{schmid2006gnu}, \linebreak \cite{de2012using}, \cite{a2011spectrum}, \cite{szalontai2010using}, \linebreak \cite{meshkova2011using}, \cite{murphy2006design}, \cite{yuan2006soda}, \cite{tan2011sora}, \linebreak \cite{zhang2011wireless} e \cite{wyglinski2013digital}.
+
+\section{Currículo resumido dos autores} % Endereço e telefone?
+
+\begin{itemize}
+
+\item \textbf{Wendley S. Silva}: estudante de doutorado no Programa de Pós-Graduação em Ciência da Computação na UFMG. Mestre em Engenharia de Teleinformática pela UFC (2010), possui graduação em Telemática - ênfase em Informática pelo IFCE (2006). Atualmente é professor da Universidade Federal do Ceará, \textit{campus} Sobral, lecionando nos cursos de Engenharia da Computação e Engenharia Elétrica. Tem experiência na área de Ciência da Computação, com ênfase em Teleinformática, com atual interesse nas áreas de modelagem e análise de desempenho de tráfego de redes, Redes Definidas por \textit{Software} (SDN), e Rádios Definidos por \textit{Software} (SDR).
+
+\item \textbf{Jefferson Rayneres S. Cordeiro}: estudante de mestrado no Programa de Pós-Graduação em Ciência da Computação na UFMG (2014.2 - 2016.1). Bacharel em Ciência da Computação pela UFMG (2014.1), Técnico em Informática pelo IFMG/SJE (2003). Atualmente é estagiário na empresa "Synergia desenvolvimento de softwares e sistemas". Atuou como Agente de Informática no DAST/UFMG e professor de informática básica; tem experiência em desenvolvimento de sistemas web e sistemas RFID. Possui interesse em redes de sensores sem fio, internet das coisas e redes definidas por software.
+
+
+\item \textbf{José Marcos S. Nogueira}: é engenheiro eletricista pela Universidade Federal de Minas Gerais - UFMG (1975), mestre em Ciência da Computação pela UFMG (1979) e doutor em Engenharia Elétrica pela Universidade Estadual de Campinas - Unicamp (1985). Professor Titular no Departamento de Ciência da Computação da UFMG. Realizou pós-doutorado na University of British Columbia - UBC, Canadá (1988-89) e passou ano sabático na Université Pierre et Marie Curie (Univ. Paris 6), França (2004-05). Foi chefe do DCC/UFMG, coordenador do Programa de Pós-Graduação em Ciência da Computação da UFMG (2009-2012) e coordenador do curso de bacharelado em Ciência da Computação da UFMG. Suas áreas de interesse são redes de computadores, gerenciamento de redes, redes de sensores sem fio, computação móvel e redes tolerantes a interrupções. Tem experiência em projetos de desenvolvimento de software, particularmente de gerenciamento e supervisão de redes. Orientou em torno de 40 alunos de mestrado e oito alunos de doutorado. Publica regularmente em revistas internacionais e em anais de conferências nacionais e internacionais. É membro ativo das comunidades nacional e internacional de redes de computadores e gerenciamento de redes e serviços de computadores e telecomunicações. Participa regularmente de diversos comitês de organização de eventos técnicos, tendo sido coordenador geral do IEEE/IFIP NOMS 2008, do LANOMS 01 e do SBRC 95 e coordenador dos comitês de programa dos SBRCs 1999 e 2004.
+
+\item \textbf{Daniel F. Macedo}: é Professor Adjunto II no Departamento de Computação (DCC) da Universidade Federal de Minas Gerais (UFMG), e bolsista de produtividade nível 2 no CNPq. Ele foi bolsista de pós-doutorado na UFMG (2010), obteve seu doutorado em Ciência da Computação pela Université Paris VI (Pierre et Marie Curie) em 2009, e concluiu o mestrado e graduação em Ciências da Computação na Universidade Federal de Minas Gerais. Suas áreas de interesse são: redes sem fio, gerência de redes e telecomunicações, redes de sensores sem fio e computação autonômica.
+
+\item \textbf{Marcos A. M. Vieira}: possui graduação em Bacharelado em Ciencia da Computacao pela Universidade Federal de Minas Gerais(2002), mestrado em Ciências da Computação pela Universidade Federal de Minas Gerais(2004), mestrado em Computer Science pela University of Southern California(2007), doutorado em Ciência da Computação pela University of Southern California(2010) e pós-doutorado pela Universidade Federal de Minas Gerais(2011). Atualmente é Professor Adjunto da Universidade Federal de Minas Gerais. Tem experiência na área de Ciência da Computação, com ênfase em Sistemas de Computação, atuando principalmente nos temas Rede de Sensores Sem Fio e Robótica.
+
+\item \textbf{Luiz Filipe M. Vieira}: possui graduação em Ciência da Computação pela Universidade Federal de Minas Gerais(2002), mestrado em Ciências da Computação pela Universidade Federal de Minas Gerais(2004), mestrado em Computer Science pela Computer Science Department - UCLA(2007), doutorado em Computer Science pela Computer Science Department - UCLA(2009) e pós-doutorado pela Universidade Federal de Minas Gerais(2010). Atualmente é Professor Adjunto da Universidade Federal de Minas Gerais, Revisor de periódico da IEEE Transactions on Wireless Communications, Revisor de periódico da IEEE Transactions on Mobile Computing, Revisor de periódico da IEEE/ACM Transactions on Networking (Print), Revisor de periódico da Ad Hoc Networks e Revisor de periódico da IEEE Communications Letters (Print).
+
+\end{itemize}
+
+\subsection{Indicação dos autores apresentadores}
+Wendley S. Silva e Marcos A. M. Vieira.
+
+
+\bibliographystyle{sbc}
+\bibliography{refs}
+
+
+\end{document}

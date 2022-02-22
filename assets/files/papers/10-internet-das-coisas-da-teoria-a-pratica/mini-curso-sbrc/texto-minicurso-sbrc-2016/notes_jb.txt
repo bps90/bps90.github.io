@@ -1,0 +1,115 @@
+Resumo
+------
+
+- Estou em duvida quanto a classificacao do Xively como uma ferramenta
+  para analise de dados, talvez eles tenham essa funcionalidade, mas ela
+  é uma dentre outras, vejo ela, principalmente, como uma plataforma
+  para armazenamento de dados. Mas posso estar errado, tavez seria bom. -- OK
+- Ainda sobre este ponto, buscando por OpenIoT, achei uma versão no
+  github, seria essa? Se for, lá eles a descrevem como 'middleware':
+  "The OpenIoT middleware infrastructure will support flexible
+  configuration..."
+  Esses conceitos da área estão mesmos confusos, mas é bom para vermos
+  como vamos ajudar a organizar isso tudo.
+
+1.2.1 Motivação
+---------------
+
+- Quando cita os exempos no primeiro parágrafo, talvez caiba o link de
+  alguma coisa já existente (como healthcare) em um footnote.
+
+- "Questões tanto teóricas quando práticas" -- mudar 'quando' para
+  'quanto'.  -- OK
+
+- Como assim 'rotas de alta vazão'? -- OK
+
+- 'Concomitantemente as novas aplicações...' essa frase está estranha :) -- OK
+
+1.2.2 Objetivos do minicurso
+----------------------------
+
+- "... seguindo o estilo prático (hands on)"
+    ainda terá essa parte pratica? nao seria bom destacar as
+    possibilidades de execucao da pratica? assim como discutimos antes.
+    Talvez uma demonstração prática de uma implementação (add clayson)
+
+- A questão de usar Xively e OpenIoT como ferramenta de analise de dados
+  está sendo retomada aqui, vide o que discuti mais acima!
+
+1.2.2.1 Abordagem do minicurso
+------------------------------
+
+- No footnote, talvez seja bom definir o que seria 'mote' -- OK
+
+1.2.3. Perfil do público-alvo
+-----------------------------
+
+- Colocar no plural o nome do curso: 'Sistemas de Informação' -- OK
+
+- 'Espera-se que os alunos tenham conhecimentos básicoS ...' o plural aí -- OK
+
+1.3. Estrutura prevista do curso
+--------------------------------
+
+- "Combinação de sensores e sensores sociais" por que essa frase tá em
+  vermelho, ira sair? Se ficar, talvez diferenciar 'sensores físicos' e
+  'sensores sociais' -- OK
+
+1.4. Desenvolvimento dos capítulos
+----------------------------------
+
+(Estou destando cada parágrafo com sua frase inicial)
+
+- Na seção Dispositivos para IoT (5 páginas)...
+    - Raspberry 'pi', faltou o 'pi' no nome dele  -- OK
+    - Em seguida, 'são postos' em pauta os desafios (plural)  -- OK
+    - Para finalizar a seção, uma conexão com o 'Os' requisitos (genero)  -- OK
+    - 
+- Ainda na seção Software para IoT ...
+    - OLSR é usado para IoT? Além disso, como fica a questão de AODV e
+      DSR, eles também são usados ou é mais para dar um background já
+      conhecido do que era usado em RSSF?
+- Em IoT na prática (8 páginas) ...
+    - continuando essa frase acima:
+     '... demonstram-se com exercícios práticos os conceitos vistos...'  -- OK
+- A seção Gerenciamento e análise de dados (15 páginas)...
+    - Essa frase tá confusa:
+        'Já no segundo momento, é discutido o impacto que os dados
+        oriundos da IoT sobre as aplicações.'  -- OK
+        talvez falte um:
+        'que os dados oriundos da IoT ''podem causar'' sobre as
+        aplicações.'  -- OK
+    - '... como lidar 'com a sua' granularidade e inconsistência ... '
+    - 'como trabalhar com dados de heterogêneos de fontes heterogêneas.'
+        . remover 'de heterogêneos' -- OK
+- Destacamos quais são os modelos de referências existentes ...
+    - '... padronizações e desenvolvimento de protocolos otimizados 
+        ''para'' IoT...' -- OK
+    - Para finalizar a seção, levantaremos as principais questões de
+      pesquisa e oportunidades "relacionadaS" ao conteúdo apresentado.
+      (plural acima)  -- OK
+- Finalmente, na seção Conclusões e desafios (2 páginas)
+    - '... as conquistas e limitações da IoT "nos dias" atuais...'  -- OK
+
+- Essa 'Divisão do trabalho' é interna, apenas para nós?  -- OK
+
+- OBS geral sobre essa seção:
+    - Manter o tempo verbal uniforme:
+        - em alguns momentos diz que 'Na seção são apresentadas...'
+        - em outros diz que 'Na seção serão apresentadas...'
+
+1.5. Bibliografia utilizada na preparação do curso
+--------------------------------------------------
+
+- Precisa dessa seção?
+    - se precisar, é bom deixá-la mais robusta
+    - a maioria aí é de livros e minicursos
+    - isto pode passar a ideia de que o conteúdo não vai ser tão atual,
+      nem que poderá levantar os desafios e oportunidades de pesquisa
+      que foram citados acima
+- Se não for preciso ( e se couber no limite de paginas):
+    - Pode referenciar as várias RFCs dos protocolos citados no texto
+    - Artigos mais recentes sobre a área.
+    - Seria bom ter artigos referentes a cada ponto discutido!
+
+

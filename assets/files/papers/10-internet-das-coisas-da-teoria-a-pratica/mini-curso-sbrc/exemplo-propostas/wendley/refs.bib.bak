@@ -1,0 +1,133 @@
+@inproceedings{de2012using,
+  title={Using multiple channels to improve SDR flexibility and performance},
+  author={de Matos, Roberto and Frohlich, AA and Becker, Leandro Buss},
+  booktitle={Computing, Networking and Communications (ICNC), 2012 International Conference on},
+  pages={1031--1035},
+  year={2012},
+  organization={IEEE}
+}
+
+@inproceedings{a2011spectrum,
+  title={Spectrum sensing measurement using GNU Radio and USRP software radio platform},
+  author={A Rashid, Rozeha and Sarijari, Mohd Adib and Fisal, Norsheila and Lo, Anthony and Yusof, S and Kamilah, Sh and Mahalin, Nurhija},
+  booktitle={ICWMC 2011, The Seventh International Conference on Wireless and Mobile Communications},
+  pages={237--242},
+  year={2011}
+}
+
+@article{szalontai2010using,
+  title={USING SOFTWARE DEFINED RADIO AND COGNITIVE RADIO TECHNOLOGIES IN SMART HOME ENVIRONMENTS},
+  author={Szalontai, Levente and Festila, Lelia},
+  journal={Acta Technica Napocensis},
+  volume={51},
+  number={3},
+  year={2010},
+  publisher={Universitatea Tehnica Cluj- Napoca}
+}
+
+@article{ulversoy2010software,
+  title={Software defined radio: Challenges and opportunities},
+  author={Ulversoy, Tore},
+  journal={Communications Surveys \& Tutorials, IEEE},
+  volume={12},
+  number={4},
+  pages={531--550},
+  year={2010},
+  publisher={IEEE}
+}
+
+@article{schmid2006gnu,
+  title={Gnu radio 802.15. 4 en-and decoding},
+  author={Schmid, Thomas},
+  journal={unpublished document and source},
+  year={2006},
+  publisher={Citeseer}
+}
+
+@inproceedings{meshkova2011using,
+  title={Using cognitive radio principles for wireless resource management in home networking},
+  author={Meshkova, E and Wangt, Z and Nasreddine, J and Denkovski, D and Zhao, C and Rerkrai, K and Farnham, T and Ahmad, A and Gefflaut, A and Gavrilovska, L and others},
+  booktitle={Consumer Communications and Networking Conference (CCNC), 2011 IEEE},
+  pages={669--673},
+  year={2011},
+  organization={IEEE}
+}
+
+@INPROCEEDINGS{zhang2011wireless, 
+author={Chaorui Zhang and Peng Xie and Deyuan Li and Jiekai Zhang and Rong Yu}, 
+booktitle={Communication Technology and Application (ICCTA 2011), IET International Conference on}, 
+title={Wireless home gateway: Software-defined radio architecture and applications}, 
+year={2011}, 
+month={Oct}, 
+pages={346-350}
+}
+
+
+@article{bhat2012design,
+	author = {Naagesh S. Bhat},
+	title = {Design and Implementation of IEEE 802.15.4 Mac Protocol on FPGA},
+	journal = {IJCA Proceedings on Innovative Conference on Embedded Systems, Mobile Communication and Computing (ICEMC2)},
+	year = {2011},
+	volume = {ICEMC2},
+	number = {1},
+	pages = {1-5},
+	month = {September},
+	note = {Full text available}
+}
+
+
+@book{wyglinski2013digital,
+	author = {Alexander M. Wyglinski and Di Pu},
+	title = {Digital Communication Systems Engineering with Software-Defined Radio},
+	publisher = {Artech House},
+	year = {2013},
+}
+
+
+@book{johnson2011software,
+	author = {Johnson Jr, C. Richard and William A. Sethares and Andrew G. Klein},
+	title = {Software Receiver Design: Build your Own Digital Communication System in Five Easy Steps},
+	publisher = {Cambridge University Press},
+	edition = {1},
+	year = {2011},
+}
+
+
+@article{tan2011sora,
+ author = {Tan, Kun and Liu, He and Zhang, Jiansong and Zhang, Yongguang and Fang, Ji and Voelker, Geoffrey M.},
+ title = {Sora: High-performance Software Radio Using General-purpose Multi-core Processors},
+ journal = {Commun. ACM},
+ issue_date = {January 2011},
+ volume = {54},
+ number = {1},
+ month = jan,
+ year = {2011},
+ issn = {0001-0782},
+ pages = {99--107},
+ numpages = {9},
+ url = {http://doi.acm.org/10.1145/1866739.1866760},
+ doi = {10.1145/1866739.1866760},
+ acmid = {1866760},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+} 
+
+@INPROCEEDINGS{yuan2006soda, 
+author={Yuan Lin and Hyunseok Lee and Woh, M. and Harel, Y. and Mahlke, S. and Mudge, T. and Chakrabarti, C. and Flautner, K.}, 
+booktitle={Computer Architecture, 2006. ISCA '06. 33rd International Symposium on}, 
+title={SODA: A Low-power Architecture For Software Radio}, 
+year={2006}, 
+month={}, 
+pages={89-101}, 
+keywords={parallel architectures;pipeline processing;software radio;SIMD parallelism;SIMD pipeline;asymmetric processor;distributed scratchpad memories;fully programmable architecture;high-end signal processing;low-power architecture;scalar pipeline;single-instruction multiple-data parallelism;software radio;Computer architecture;Energy consumption;Hardware;Physical layer;Physics computing;Signal design;Signal processing;Software radio;Time to market;Wireless application protocol}, 
+doi={10.1109/ISCA.2006.37}, 
+ISSN={1063-6897},
+}
+
+@inproceedings{murphy2006design,
+  title={Design of WARP: a wireless open-access research platform},
+  author={Murphy, Patrick and Sabharwal, Ashu and Aazhang, Behnaam},
+  booktitle={European Signal Processing Conference},
+  pages={1804--1824},
+  year={2006}
+}

@@ -1,0 +1,710 @@
+%
+% Sample SBC book chapter
+% This is a public-domain file.
+% Charset: ISO8859-1 (latin-1) áéíóúç
+
+% Proposta de minicurso para o SBRC-2016
+
+%    >> DATAS IMPORTANTES <<
+%
+% Registro de propostas: 20/11/2015
+% Envio de Propostas: 27/11/2015
+% Comunicação dos resultados: 18/01/2016
+% Entrega dos capítulos: 21/03/2016
+
+%    >> NOVAS DATAS IMPORTANTES <<
+%
+% Registro de propostas: 20/11/2015
+% Envio de Propostas: 06/12/2015
+% Comunicação dos resultados: 18/01/2016
+% Entrega dos capítulos: 21/03/2016
+
+
+
+\documentclass{SBCbookchapter}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[brazilian]{babel}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{url}
+%\usepackage[square, authoryear]{natbib}
+\usepackage{enumitem}
+%\setcounter{secnumdepth}{5}
+%\setlength{\abovecaptionskip}{0cm}
+
+
+\title{Internet das Coisas: da Teoria à Prática.}
+%Connect and manage your things and data.
+\author{Bruno P. Santos, Lucas A. M. Silva, Bruna S. Peres, Clayson S. F. S.  
+Celes, João B. Borges Neto, Marcos Augusto M. Vieira, Luiz Filipe M. Vieira, 
+Olga 
+N. Goussevskaia e Antonio A. F. Loureiro}
+
+\address{Departamento de Ciência da Computação -- Instituto de Ciências Exatas \linebreak
+Universidade Federal de Minas Gerais (UFMG) -- Belo Horizonte, MG -- Brasil
+\email{\{bruno.ps, lams, bperes, claysonceles, joaoborges, mmvieira, lfvieira, 
+olga, loureiro\}@dcc.ufmg.br}
+}
+
+\hyphenation{de-mons-tra-ções}
+
+\begin{document}
+
+\maketitle
+
+% \begin{abstract}
+% \textcolor{red}{Máximo de 10~linhas cada (abstract e resumo)}.\\
+% Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare ex lectus. 
+%  Proin ornare iaculis laoreet. Aenean auctor fringilla ornare. Aenean quis lorem 
+% non purus feugiat malesuada. Phasellus euismod dignissim velit, sit amet euismod 
+% nibh commodo eget. Curabitur leo ligula, egestas quis massa at, lacinia ornare 
+% purus. Nunc placerat, magna eget scelerisque ultrices, leo arcu aliquam diam, ut 
+% semper ex nulla nec nisl. Duis blandit, nibh non sollicitudin rutrum, turpis 
+% magna venenatis felis, at tincidunt neque erat bibendum est. Morbi tempor ut 
+% sapien eget faucibus. In venenatis, orci quis porta cursus, neque velit semper 
+% mi, suscipit condimentum ipsum quam sed velit. Maecenas aliquet lorem justo, 
+% dignissim dictum lorem pharetra ac. Fusce fringilla in augue id tincidunt. 
+% Nullam nec sollicitudin ligula..
+% \end{abstract}
+
+\begin{resumo}
+\begin{otherlanguage}{brazilian}
+% Máximo de 10~linhas cada (abstract e resumo).
+A proliferação de objetos com capacidade de monitoramento, processamento e 
+comunicação é crescente nos últimos anos. Diante disso, aparece o cenário de 
+Internet das Coisas (Internet of Things - IoT) onde objetos podem se conectar à 
+Internet e prover comunicação entre usuários, dispositivos (D2D), máquinas (M2M) 
+e formarem novas aplicações. Várias questões teóricas e práticas surgem no 
+desenvolvimento de IoT, por exemplo, como conectar esses objetos à Internet e 
+como endereçar os objetos. Aliado a essas perguntas diversos desafios devem ser 
+superados, por exemplo, como lidar com as restrições de processamento, largura 
+de banda e energia dos dispositivos. Neste sentido, novos paradigmas de 
+comunicação e roteamento podem ser explorados. Questões relacionadas ao 
+endereçamento IP e como adaptá-lo precisam ser respondidas. Oportunidades de 
+novas aplicações em uma rede de objetos inteligentes aparecem e, junto com essas 
+aplicações, também surgem novos desafios. 
+
+O objetivo deste minicurso é descrever o estado atual da Internet das Coisas da 
+teoria à prática, e discutir desafios e questões de pesquisa. Através de uma 
+abordagem crítica, é exposto uma visão geral da área, ilustrando soluções 
+parciais e/ou totais propostas na literatura para as questões mencionadas, além 
+de destacar os principais desafios e oportunidades que a área oferece. 
+
+%%%%%%%%%%%%%% O texto abaixo foi comentado, pois o resumo ficou grande. %%%%%
+
+% Iniciamos mostrando a evolução dos dispositivos embarcados e redes de sensores, 
+% os quais são os blocos básicos de construção dos objetos inteligentes, sempre 
+% pontuando os aspectos que evoluíram para formar o que é hoje a IoT. A seguir, 
+% destacamos o potencial de aplicações possíveis sobre a rede de objetos 
+% inteligentes e os desafios que devem ser enfrentados por essas aplicações, por 
+% exemplo, dados imperfeitos, correlatos, inconsistentes e outros. Finalmente, 
+% discutimos como trabalhar com a IoT, através de demonstração prática, empregando 
+% os conceitos vistos em dispositivos reais e/ou exibindo as ferramentas como, por 
+% exemplo, a instalação da pilha de protocolos de rede em dispositivos de baixa 
+% potência (ex: 6LoWPAN/RPL e CoAP) e uso de ferramentas de gerenciamento 
+% (Middlewares) e análise de dados. Além da descrição prática, discutimos os 
+% desafios e as oportunidades de pesquisa na áreas de IoT.
+
+\end{otherlanguage}
+\end{resumo}
+
+
+% 1. Dados de Identificação
+%   1.1 Título do minicurso
+%   1.2 Autor(es): instituição(ções), endereço(s), telefone(s), e-mail(s)
+%   1.3 Indicação do autor que apresentará o curso
+% 2. Dados Gerais
+%   2.1. Objetivos do curso e tratamento dado ao tema (ex: teórico ou prático,  
+% apanhado geral de resultados ou aprofundamento de aspectos específicos, 
+% apresentação ou comparação de tecnologias, formação de novas habilidades ou 
+% informação, etc.)
+%   2.2. Perfil do público alvo
+% 3. Estrutura prevista do texto (esboço do curso, tópicos/capítulos cobertos)
+% 4. Para cada tópico/capítulo previsto no item 3, informar um resumo do 
+% conteúdo a ser abordado e previsão do número de páginas
+% 5. Bibliografia principal utilizada na preparação do curso (máximo de 1 página)
+% 6. Curriculum Vitae resumido dos autores (máximo de 1 página por autor)
+
+
+\section{Indicação dos autores apresentadores}
+Bruno P. Santos, Clayson S. F. S. Celes, Lucas A. M. Silva, Antonio A. F. 
+Loureiro.
+
+\section{Dados gerais}
+
+\subsection{Motivação}
+%OK
+% Comentários - Clayson
+% Quando se refere a uma ideia ou oração já mencionada usar *esse* e nao 
+% *este*. Não é isso?
+
+Ao conectar objetos com diferentes recursos a uma rede, potencializa-se o 
+surgimento de novas aplicações. Neste sentido, conectar esses objetos à 
+Internet significa criar a Internet das Coisas (Internet of Things - IoT). Na 
+IoT, os objetos podem prover comunicação entre usuários, dispositivos (D2D) e 
+máquinas (M2M). Com isto emerge uma nova gama de aplicações, tais como coleta de 
+dados de pacientes e monitoramento de idosos (\textit{healthcare at home}), 
+sensoriamento de ambientes de difícil acesso e inóspitos, entre outras.
+% OK
+% Comentários - Clayson
+% 1. Ao conectar objetos com diferentes recursos computacionais a uma rede,  
+% potencializa-se o surgimento de novas aplicações.
+% 2. com isto emerge uma gama de aplicações, tais como coleta de dados de pacientes 
+% e monitoramento de idosos (\textit{healthcare at home}), sensoriamento de 
+% ambientes de difícil acesso e inóspitos, entre outras.
+% 3. Eu não colocaria Internet (IP), apenas Internet.
+
+Entretanto, ao passo que a possibilidade de novas aplicações é crescente, os 
+desafios de conectar os objetos à Internet surgem. Naturalmente, os objetos são
+heterogêneos, isto é, divergem em implementação, recursos e qualidade e, em 
+geral, apresentam limitações tais como: energia, capacidade de processamento, 
+memória e comunicação. Questões tanto teóricas quanto práticas surgem, por 
+exemplo, como prover endereçamento aos dispositivos, como encontrar rotas de 
+alta vazão e melhor taxa de entrega ao passo que o baixo consumo de energia seja 
+mantido. Deste modo, fica evidente a necessidade da adaptação dos protocolos 
+existentes (por exemplo o IP). Além disso, os paradigmas de comunicação e 
+roteamento devem ser explorados para permitir prover os serviços fundamentais 
+para formar novas aplicações. 
+
+Novos desafios surgem ao passo que são criadas novas aplicações para IoT. Os 
+dados providos pelos objetos agora podem apresentar imperfeições (calibragem do 
+sensor), inconsistências (fora de ordem, \textit{outliers}), serem de diferentes 
+tipos (gerados por pessoas, sensores físicos, fusão de dados). Assim, as 
+aplicações e algoritmos devem ser capazes de lidar com esses desafios sobre os 
+dados. Outro exemplo diz respeito ao nível de confiança sobre os dados obtidos 
+dos dispositivos da IoT e como/onde  podemos empregar esses dados em 
+determinados cenários. Deste modo, os desafios impostos por essas novas 
+aplicações sobre a IoT devem ser explorados e soluções devem ser propostas.
+%OK
+% Comentários - Clayson
+% como podemos empregar esses dados em determinados cenários.
+
+%------------- Versão antiga ----------------------
+% \textcolor[rgb]{.4,.4,.4}{
+% Os autores do presente minicurso, notam a falta de documentação e/ou 
+% trabalhos que mostram como implementar \textit{Internet of Things} (IoT) na 
+% prática, em especial, no nosso idioma. Na literatura, é fácil encontrar 
+% documentos que descrevem os dispositivos e softwares utilizados, entretanto não 
+% é fácil encontrar os softwares e documentos que mostram como instalar e 
+% desenvolver para IoT. Apesar de encontrarmos trabalhos que descrevem 
+% plataformas de \textit{middleware} capazes de gerenciar as informações advindas 
+% dos dispositivos IoT, essas plataformas abstraem as complexidades das bases da 
+% IoT. Para aqueles que desejam entender as bases e implementar uma ``IoT 
+% própria'' a curva de aprendizado é dispendiosa, visto que é necessária diversas 
+% buscas para entender os conceitos, dispositivos e softwares a serem utilizados, 
+% além de todo o trabalho para a instalação e escolha das ferramentas de 
+% desenvolvimento. Diante deste cenário, nos vemos motivados a abrandar essa curva 
+% aprendizado para entender e implementar uma IoT. }
+
+% \textcolor[rgb]{.4,.4,.4}{
+% Diferente dos minicursos anteriormente apresentados no SBRC, nossa proposta 
+% visa mostrar como ligar a teoria, a prática, as aplicações e serviços existentes 
+% na IoT. Para evidenciar as diferenças dessa proposta, destacamos que no 
+% minicurso \textit{Plataformas para a Internet das Coisas} de 2015 e \textit{Web 
+% das coisas: conectando dispositivos físicos ao mundo digital} de 2011, pouca 
+% atenção foi dada a quais dispositivos são empregados na IoT, suas limitações e 
+% desafios, %em nossa proposta esses quesitos serão abordados.
+% questões que serão abordadas em nossa proposta.Em 2010, foi apresentado o 
+% minicurso \textit{Redes de Sensores Aquáticas}, o qual teve enfoque em redes de 
+% sensores e redes aquáticas destacando tanto hardware quanto protocolos da época. 
+% Entretanto, não foi abordado os trabalhos que hoje compõem os principais 
+% protocolos para IoT, por exemplo, \textit{IPv6 in Low-Power Wireless Personal 
+% Area Networks} (6LoWPAN) e o protocolo roteamento \textit{IPV6 Routing Protocol 
+% for Low-Power and Lossy Networks} (RPL). Hoje esses protocolos estão mais 
+% consolidados e, por isso, temos a intenção de comentar e contextualizar estes e 
+% outros protocolos ao longo do minicurso proposto. O minicurso 
+% \textit{Arquiteturas para Redes de Sensores Sem Fio} de 2004, por sua vez, 
+% possui uma perspectiva introdutória e de caracterização das redes de sensores 
+% sem fio. Diferente deste minicurso, nós pretendemos contemplar desde uma 
+% introdução a IoT, os dispositivos e \textit{softwares} de implementação e 
+% desenvolvimento, realizar exercícios práticos, chegando até conceitos mais 
+% avançados como as padronizações (MQTT e CoAP) que viabilizam a construção das 
+% plataformas de \textit{middleware}, bem como questões de pesquisa na área.}
+
+\subsection{Objetivos do curso}
+%OK
+% Substituir: dando enfoque aos seus blocos básicos de construção e especificidades.
+%        por: com enfoque em seus blocos básicos de construção e especificidades.
+O objetivo deste minicurso é descrever o estado atual da Internet das Coisas da 
+teoria à prática. Para alcançar esse objetivo, a IoT será contextualizada na 
+história das redes de computadores, com enfoque em seus blocos básicos de 
+construção e especificidades. Com base nesta contextualização e por meio 
+de uma abordagem crítica são expostos os desafios e questões de pesquisa que a 
+IoT impõe.
+
+%OK
+%Substituir: "dentro de"
+%       por: "em"
+Os desafios e questões de pesquisa que o minicurso aborda podem ser divididos 
+em quatro categorias:
+
+\begin{enumerate}[label=\roman*)]
+  \item \textbf{Objetos IoT}: são aqueles que envolvem blocos básicos de 
+construção dos objetos inteligentes capacitando-os a operar na IoT. Em geral, as 
+características desejáveis para os dispositivos são: apresentar baixo consumo de 
+energia; possibilidade de comunicação e; tamanho reduzido;
+  
+  \item \textbf{Redes de comunicação}: dizem respeito a como conectar os 
+dispositivos à infraestrutura existente (IP), como devem ser explorados os 
+paradigmas de comunicação e roteamento para prover protocolos otimizados para 
+IoT que levem em conta as limitações dos dispositivos, escalabilidade e outras;
+
+%OK
+%Substituir:
+%Esses dispositivos por serem construídos por diferentes fabricantes 
+% apresentam, como consequência, especificidades...
+%Por:
+% Por serem construídos por diferentes fabricantes, esses dispositivos 
+%apresentam especificidades....
+  \item \textbf{Padronizações}: destacam o impacto das padronizações sobre 
+a intrínseca heterogeneidade dos objetos. Por serem construídos por diferentes 
+fabricantes, esses dispositivos apresentam especificidades, por exemplo, alta 
+precisão para alguns sensores e baixa para outros. Por isso, padronizar o 
+acesso aos recursos e trabalhar com dados oriundos da IoT é tão desafiador. 
+
+  \item \textbf{Novas aplicações em IoT}: neste quesito se enquadram as 
+questões referentes às novas aplicações sobre IoT, dificuldades encontradas 
+para tratar informações advindas dos objetos inteligentes. Assim, almejamos 
+descrever quais são os principais problemas encontrados ao se implementar sobre 
+IoT e quais os desafios que devem ser enfrentados. 
+\end{enumerate}
+
+\noindent Outro propósito deste curso é apresentar a visão geral da área 
+através de soluções presentes na literatura para as questões acima citadas. As 
+soluções discutidas ao longo do minicurso são demonstradas, pelos 
+apresentadores, seguindo o estilo prático. O principal objetivo da exposição 
+das soluções práticas é consolidar os conceitos vistos ao longo do curso. Para 
+isso, exibiremos  como anexar a um dispositivo IoT de baixa potência a pilha 
+básica de protocolos e uma aplicação (Ex: 6LOWPAN/RPL e CoAP). Também será 
+exibida uma prática de como utilizar ferramentas de gerenciamento 
+(\textit{middleware}) e análise de dados. Portanto, os leitores e ouvintes 
+podem experimentar a implantação de uma rede de dispositivos inteligentes, além 
+de conhecer o estado da arte em IoT apreciando as questões e desafios do 
+hardware e software utilizados.
+
+% \textcolor[rgb]{.4,.4,.4}{
+% Este minicurso tem por objetivo apresentar a Internet das Coisas pontuando sua 
+% história, blocos básicos de construção (tanto \textit{hardware} quanto 
+% \textit{software}), implementação e validação prática dos conceitos discutidos. 
+% Diante de um cenário IoT, visto na prática, também temos como meta mostrar como 
+% gerenciar os dispositivos e dados, além de pontuar as principais oportunidades 
+% de inovação e questões de pesquisa na área de IoT. Ao final do minicurso, o 
+% participante terá compreendido o processo de evolução e conceitos que englobam a 
+% implementação IoT, apreciando os desafios dessa rede implementada com 
+% dispositivos heterogêneos, comunicação sem fio, diferentes sensores, variados 
+% protocolos, plataformas de~\textit{middlewares} para gerenciamento de dados, bem 
+% como discutir quais são as tendências para o futuro da IoT.
+% }
+
+\subsubsection{Abordagem do minicurso}
+
+A abordagem empregada neste curso será no estilo~\textit{teórico-prática}. No 
+primeiro momento, uma introdução e contextualização dos leitores e participantes 
+será realizada, identificando os blocos iniciais para a construção e 
+desenvolvimento da IoT. No segundo momento, mostraremos uma implementação 
+prática\footnote{Vale ressaltar que a demonstração prática requer uso 
+de~\textit{hardware}, portanto estamos avaliando a viabilidade de execução 
+prática com uso de nós sensores TelosB~\cite{memsic2015telosb} e 
+Iris~\cite{memsic2015iris} de propriedade do DCC-UFMG. De todo modo, a prática 
+também constará de exibição multimídia dos conceitos aprendidos.} dos conceitos 
+discutidos a priore. A parte prática engloba a instalação da pilha de 
+protocolos 6LoWPAN/RPL e CoAP em dispositivos (os conhecidos motes). Após o 
+entendimento teórico e prático, retomaremos as discussões teóricas sobre as 
+implicações e desafios dos momentos apresentados, pontuaremos também as 
+padronizações que permitem construir ferramentas de gerenciamento (os 
+\textit{middlewares}) dos dispositivos e análise dados, além de destacar 
+questões de pesquisa em aberto. Para finalizar, os participantes serão 
+convidados a opinar e refletir sobre as tendências futuras da IoT.
+
+\subsection{Perfil do público-alvo}
+
+Este minicurso se destina a profissionais e estudantes de graduação e 
+pós-graduação das áreas de Ciência da Computação, Sistemas de Informação, 
+Tecnologia da Informação, Engenharias (Elétrica, Automação, Computação) e outras 
+correlatas. Alunos ou profissionais com conhecimento em sistemas em rede e/ou 
+comunicações digitais podem expandir suas competências com o conteúdo teórico e 
+prático discutidos e apresentados ao longo do minicurso. Espera-se que os alunos 
+tenham conhecimentos básicos de redes de computadores somente, pois o minicurso 
+visa explorar desde os blocos básicos da implementação da IoT até questões mais 
+avançadas do tema. Conhecimentos básicos de programação, redes sem fio, sistemas 
+distribuídos e análises estatísticas são bem vindos, mas não são obrigatórios 
+para o entendimento do curso.
+
+
+\section{Estrutura prevista do curso}
+
+O conteúdo do minicurso está distribuído nas seguintes seções, que são 
+detalhadas a seguir:
+
+\begin{enumerate}
+  \item Introdução
+    \begin{itemize}
+      \item Exemplos de aplicações como um gacho para a motivação da IoT
+      \item Enfoque na motivação de conectar dispositivos inteligentes à 
+Internet
+      \item Sistemas embarcados
+      \item Redes de sensores
+      \item Computação ubíqua e pervasiva
+      \item Definir o que é IoT através da evolução dos sistemas embarcados, 
+RSSF e computação ubíqua/pervasiva.
+      \item Deixar um gacho com os principais desafios existentes ao nível de 
+hardware e ao nível de software
+    \end{itemize}
+
+  \item Dispositivos para IoT
+    \begin{itemize}
+      \item Quais são as melhores referências de dispositivos?
+      \item Elencar quais são as principais tecnologias para conectar 
+dispositivos
+      \item Destacar as limitações dos dispositivos e quais são as principais 
+propostas de solução existentes (Ex: energia -> Energy Hasversting)
+      \item Custo para manutenção dos dispositivos
+      \item Elencar as características dos dispositivos IoT
+      \item Detalhar de modo textual e tabular uma lista não exaustiva de 
+exemplos de dispositivos.
+      \item Construir 'rank' baseado nas características
+    \end{itemize}
+
+  \item Software para IoT
+    \begin{itemize}
+      \item Quais são os sistemas operacionais?
+      \item Porque IP para os dispositivos?
+	\begin{itemize}
+	  \item Quais as adaptações necessárias 6LOWPAN, $\mu$IP...
+	\end{itemize}
+      \item Paradigmas de comunicação e seus protocolos (facilita o Plug $\& 
+$ Play?)
+      \begin{itemize}
+       \item Muitos-para-um Ex: CTP, MultHopLQI...
+       \item Um-para-muitos: Direct Difusion, Deluxe, DIP/DRIP, CodeDRIP....
+       \item Qualquer-para-Qualquer: RPL, XCTP, Matrix
+      \end{itemize}
+      
+      \item Roteamento
+	\begin{itemize}
+	 \item XCTP/Matrix (Estudo de caso)
+	\end{itemize}
+
+      \item Desenvolvimento (simularoes)
+	\item Tabular ou listar os simuladores e as principais características
+	\item Exemplificar na prática com o Contiki-RPL 6LowPAN direto do 
+simulador para uma rede externa.
+
+      \item Questões de pesquisa
+	\begin{itemize}
+	  \item Pilha de protocolos X Consumo de recursos
+	  \item Segurança*
+	\end{itemize}
+
+    \end{itemize}
+
+
+  \item IoT na prática
+  \begin{itemize}
+    \item Definir quais serão os experimentos.
+    \begin{itemize}
+      \item A proposta inicial seria:
+      \begin{itemize}
+	\item Instalar os códigos de um ou dos SOs TinyOS e Contiki. Porém 
+existe o problema de como explicar tal instalação no texto. Além dessa 
+demonstração, seria executada consultas aos nós sensores através de requisições 
+CoAP.
+	\item Realizar uma consulta em uma plataforma middleware tal como o 
+João utiliza a Xyvely.
+	\item OBS (IMPORTANTE): vale notar que as demonstrações serão 
+realizadas ao longo da apresentação e não em um momento específico.
+	\item OBS (IMPORTANTE): podemos criar um vídeo para exemplificar de 
+forma mais rápida e confiável, mas ainda assim seria interessante levar os 
+motes reais para validar o conteúdo do vídeo.
+      \end{itemize}
+    \end{itemize}
+
+  \end{itemize}
+
+  \item Gerenciamento e análise de dados
+    \begin{itemize}
+      \item Técnicas para abstrair a heterogeneidade dos dispositivos
+	\begin{itemize}
+	 \item CoAP, MQTT...
+	 \item Ferramentas existentes (Plataformas de middleware)
+	\end{itemize}
+
+      \item Trabalhar com dados oriundos da IoT
+	\begin{itemize}
+	  \item Formato dos dados (JSON, XML ...)
+	  \item Aspectos dos dados
+	  \begin{itemize}
+	    \item Espaços, Correlatos, Diferentes fontes, Imprecisos....
+	  \end{itemize}
+	  \item Qualidade dos dados (Estudo de caso)
+	  \item Fusão de dados com o artigo que o professor passou para Bruno e 
+João (Estudo de caso).
+
+	\end{itemize}
+
+      \item Questões de pesquisa
+    \end{itemize}
+    
+  \item Comentários finais
+    \begin{itemize}
+      \item Questões não comentadas no capítulo (essas questões devem entrar em 
+alguma seção?)
+      \begin{itemize}
+	\item Como tornar os dispositivos Plug $\&$ Play
+	\item Localização (quais os problemas existentes? como fazer?)
+	\item Modelos de conectividade
+	\item Segurança
+	\item Descoberta de Serviços
+	\item Desempenho X quantidades de acessos
+	\item IP X Non-IP
+	\item Exemplos de Aplicações (Automação residencial, Smart Cities, 
+Urban Networks, Monitoramento de Saúde)
+      \end{itemize}
+      \item Revisão do texto
+      \item Agradecimentos
+    \end{itemize}
+
+
+  \item Referências Bibliográficas
+\end{enumerate}
+
+
+\section{Desenvolvimento dos capítulos}
+%Para cada tópico/capítulo previsto no item anterior, apresentar um resumo do 
+% conteúdo a ser abordado e previsão do número de páginas.
+
+Na \textbf{Introdução (5 páginas)}, é apresentado o que 
+são os objetos inteligentes, de onde surgiram e motivações do estudo da IoT. 
+Como principal objetivo desta seção tem-se a perspectiva da evolução dos 
+sistemas de hardware e software que suportam a IoT dos dias atuais. Os 
+principais pontos históricos são levantados, destacando a interseção entre da 
+IoT com as Redes de Sensores Sem Fio (RSSF), Redes de Computadores, telefonia 
+móvel, computação móvel e ubíqua e, sistemas embarcados. Uma atenção especial é 
+dada aos dispositivos IoT (ex: motes de baixo custo, nó sensores comerciais, 
+\textit{Arduino} e \textit{Raspberry Pi}) e  as tecnologias mais utilizadas para 
+a conexão entre os dispositivos (ex: os padrões IEEE~$802.15.4$, IEEE~$802.11$ e 
+\textit{Bluetooth Low Energy (BLE)}). Para concluir a introdução, é feita uma 
+visão geral da IoT, aliada a ênfases nos principais desafios do ponto 
+de vista de hardware e software que lançam as primeiras questões e direções de 
+pesquisa na área. Isto, funcionará como âncora para as próximas seções do 
+minicurso.
+
+
+Na seção \textbf{Dispositivos para IoT (5 páginas)}, são 
+discutidos os mais variados dispositivos utilizados na IoT. Classificamos os 
+dispositivos em três grandes grupos: i) os \textbf{dispositivos para pesquisa e 
+desenvolvimento} são os famosos motes (Mica, Micaz, Telos e outros); ii) 
+\textbf{dispositivos de uso doméstico} são aqueles que podem ser usados para 
+pesquisa, passatempo (\textit{hobby}) por usuários comuns ou para implementação 
+final no caso de empresas, exemplos desses dispositivos são Arduino e 
+Raspberry Pi; iii) os \textbf{dispositivos comerciais} são aqueles já em 
+produção e venda através de empresas, exemplo desses dispositivos são os Galileo 
+e Edison da Intel e Samsung ARTIK.  Em particular, uma ênfase maior é 
+realizada ao mote TelosB, o qual é empregado nos exercícios práticos do 
+minicurso. Em seguida, são postos em pauta os desafios de pesquisa dos 
+dispositivos IoT. Para finalizar a seção, uma conexão com os requisitos de 
+software para esses dispositivos é realizada, introduzindo e justificando a 
+próxima seção.
+
+A seção \textbf{Software para IoT (15 páginas)} tem por 
+objetivo expor a perspectiva de softwares para IoT, tanto para operação quanto 
+para desenvolvimento. Nesta seção, a atenção se volta para os sistemas 
+operacionais (SO) para IoT e na pilha de protocolos de rede. Inicialmente são 
+abordados os SOs TinyOS e Contiki OS, os quais são amplamente empregados em 
+dispositivos IoT tanto na academia quanto para produção final de empresas. Em 
+seguida, apresentamos os principais simuladores que apoiam o desenvolvimento de 
+software para IoT, tais como: NS2/NS3, Cooja, Tossim, OMNet++/Castalia e 
+Sinalgo. 
+
+Ainda na seção \textbf{Software para IoT}, damos destaque a variados protocolos 
+que podem compor a pilha de protocolos de rede para IoT, em particular, é posto 
+em evidência IPv6/6LoWPAN, RPL, CoAP, Zeroconf, MQTT, e as pilhas lwIP e 
+$\mu$IP. Além disso, pontuamos o estado da arte em protocolos para IoT que 
+exploram questões de endereçamento e paradigmas de comunicação para otimizar a 
+rede de objetos IoT, uma amostra desses protocolos são: RPL, CTP, XCTP, MHCL, 
+Hydro, OLSR, AODV, DSR e outros que exploram os paradigmas de comunicação para 
+otimizar a rede IoT. Como nas seções anteriores, também levantamos questões de 
+pesquisa e, principalmente, alertamos para as padronizações que são fundamentais 
+para o funcionamento de uma IoT composta por dispositivos heterogêneos. Com base 
+nessas considerações e nos conhecimentos discutidos nesta e nas seções 
+anteriores, os participantes estão aptos a entender e realizar o exercício 
+prático, que é o propósito da próxima seção.
+
+Em \textbf{IoT na prática (8 páginas)}, demonstra-se com
+exercícios práticos os conceitos vistos na seções \textit{Dispositivos para IoT 
+e Software para IoT}. Esta seção é divida em duas partes. Na primeira, é 
+demostrado minunciosamente como instalar a pilha de protocolos com 6LoWPAN/RPL 
+em motes TelosB, para tanto, são utilizados os SOs TinyOS e Contiki OS. As 
+principais diferenças e interseções das duas diferentes implementações também 
+são analisadas. Com isto é possível validar e diagnosticar a operacionalidade 
+dos dispositivos através do protocolo ICMPv6. Na segunda parte desta seção, a 
+qual tem por objetivo contextualizar e exibir o potencial das padronizações 
+sobre o modo de acesso aos recursos da IoT. Para tanto, apresentamos como 
+instalar e manipular o protocolo CoAP nos objetos IoT, além de mostrar como 
+realizar consultas (inserção, atualização e remoção de estados) nos dispositivos 
+da rede. Finalmente chamamos a atenção dos participantes para as diferentes 
+aplicações possíveis sobre uma IoT funcional e padronizada, este elo é 
+importante para o entendimento da próxima seção que abordará as diferentes 
+aplicações e desafios após uma rede de dispositivos IoT funcional.
+
+A seção \textbf{Gerenciamento e análise de dados (15 páginas)} tem por objetivo 
+descrever quais os principais desafios ao se implementar aplicações sobre IoT. 
+Esta seção é dividida em dois momentos. No primeiro momento, explicamos quais 
+são as principais técnicas existentes para abstrair a heterogeneidade dos 
+dispositivos IoT. Essas abstrações viabilizam a construção de aplicações e 
+serviços sobre uma rede de dispositivos IoT, bem como abstraem as complexidades 
+do sistema para usuários finais. Já no segundo momento, é discutido o impacto 
+que os dados oriundos da IoT podem causar sobre as aplicações. Neste quesito, 
+diversas questões e desafios de pesquisa estão em abertos como, por exemplo, 
+tratar imperfeições (imprecisos, vagos, ambíguos etc.) nos dados, como lidar com 
+a sua granularidade e inconsistência (ex: dados espaçados no tempo, fora de 
+ordem, \textit{outliers}) e, em especial, como trabalhar com dados de fontes 
+heterogêneas.
+
+Destacamos quais são os modelos de referências existentes que indicam os 
+blocos básicos de construção dessas abstrações, também pontuamos algumas 
+plataformas de gerenciamento (\textit{middleware}) e análise de dados 
+existentes. Em seguida, retomamos a discussão sobre padronizações e 
+desenvolvimento de protocolos otimizados para IoT, dando destaque aos mais 
+atuais protocolos MQTT e CoAP. Em seguida, apresentamos ferramentas de gerência 
+e análise de dados (Ex: Xively e OpenIoT) e, para os ouvintes ocorrerá uma 
+demonstração prática das ferramentas, demonstrando como manipular dados da IoT. 
+Para finalizar a seção, levantaremos as principais questões de pesquisa e 
+oportunidades relacionadas ao conteúdo apresentado.
+
+Finalmente, na seção \textbf{Conclusões e desafios (2 páginas)}, 
+são apresentadas as considerações finais, as conquistas e limitações da IoT nos 
+dias atuais, bem como apontamos uma visão do que será IoT no futuro. Chamaremos 
+atenção, novamente, dos leitores e participantes do minicurso as questões de 
+pesquisa e oportunidades da área.
+
+
+% \textcolor{red}{
+% Divisão do trabalho.
+% \begin{itemize}
+% \item Introdução (Bruno, Bruna e Professores)
+% \item Dispositivos para IoT (Lucas e Bruno)
+% \item Software para IoT (Bruna, Bruno e Clayson)
+% \item IoT na prática (Bruno, Bruna, Marcos e Luiz)
+% \item Gerenciamento e análise de dados (João, Clayson, Bruno, Antonio)
+% \item Conclusão (Bruno, Bruna, Lucas e Professores)
+% \end{itemize}
+% }
+
+% \section{Bibliografia utilizada na preparação do curso}
+% Para a confecção do curso são utilizadas como principais fontes as 
+% referências:
+% \linebreak \cite{BorgesNeto2015}, \cite{shelby2014constrained}, 
+% \cite{winter2012rpl}, \cite{pires2015plataformas}, \linebreak 
+% \cite{chaouchi2013internet}, \cite{vasseur2010interconnecting}, 
+% \cite{Khaleghi2013Multi}, \cite{ludovici2013tinycoap}, \linebreak 
+% \cite{ko2011connecting}, \cite{vieira2010redes}, \cite{Gubbi2013}.
+
+
+\nocite{*}
+\bibliographystyle{sbc}
+\bibliography{refs}
+
+
+\section{Currículo resumido dos autores} 
+
+\begin{itemize}
+
+\item \textbf{Bruno P. Santos}: possui graduação em Bacharelado em 
+Ciência da Computação Universidade Estadual de Santa Cruz - UESC (2012), mestre 
+em Ciência da Computação pela Universidade Federal de Minas Gerais - UFMG (2015) 
+e, atualmente, é aluno de doutorado pela Universidade Federal de Minas Gerais - 
+UFMG (2015 - 2019). As principais áreas de interesse são redes de computadores, 
+gerenciamento de redes, redes de sensores sem fio, computação móvel, computação 
+ubíqua, redes inteligentes, fusão/análise de dados, Modelagem Computacional para 
+CAD (Computação de Alto Desempenho), processamento paralelo (GPU, MPI, OpenMP). 
+Atuando ativamente no desenvolvimento de técnica e tecnologias nas áreas de 
+interesse. 
+
+\item \textbf{Lucas A. M. Silva}: possui graduação em Ciência da Computação 
+pela Universidade Federal de Minas Gerais - UFMG (2014), atualmente, é aluno de 
+mestrado pela Universidade Federal Minas Gerais - UFMG (2014 - 2016). As 
+principais áreas de pesquisa são redes de computadores, Redes Definidas por 
+Software e Internet das Coisas, participando ativamente em projetos nas áreas 
+citadas.
+
+\item \textbf{Bruna S. Peres}: possui graduação em Ciência da Computação pela 
+Pontifícia Universidade Católica de Minas Gerais - PUC Minas (2012), mestre em 
+Ciência da Computação pela Universidade Federal de Minas Gerais - UFMG (2015) e, 
+atualmente, é aluna de doutorado pela Universidade Federal de Minas Gerais - 
+UFMG (2015 - 2019). As principais áreas de interesse são redes de computadores, 
+redes de sensores sem fio, computação móvel, computação ubíqua, modelos de 
+conectividade e redes inteligentes. Atuando ativamente em projetos nas áreas de 
+interesse. 
+
+\item \textbf{Clayson S. F. S. Celes}: Estudante de doutorado em ciência da 
+computação na Universidade Federal de Minas Gerais (UFMG). Possui mestrado em 
+Ciência da Computação pela UFMG. Graduação em Ciência da Computação pela 
+Universidade Estadual do Ceará. Graduação em Teleinformática pelo Instituto 
+Federal de Educação, Ciência e Tecnologia do Ceará. Tem experiência na área de 
+Ciência da Computação, com ênfase em sistemas distribuídos, atuando 
+principalmente nos seguintes temas: computação móvel e ubíqua, algoritmos 
+distribuídos, comunicação sem fio e redes de computadores.
+
+\item \textbf{João B. B. Neto}: Possui mestrado em Engenharia de Teleinformática 
+pela Universidade Federal do Ceará (2009) e graduação em Ciência da Computação 
+pela Universidade do Estado do Rio Grande do Norte (2006). Atualmente é e 
+doutorando em Ciência da Computação pela Universidade Federal de Minas Gerais e 
+professor assistente na Universidade Federal do Rio Grande do Norte, onde atua 
+em projetos de desenvolvimento, pesquisa e extensão. Tem experiência na área de 
+Ciência da Computação, com ênfase em Redes de Computadores, atuando 
+principalmente nos seguintes temas: Redes de Sensores Sem Fio, Computação Móvel 
+e Computação Ubíqua. Também atua nos seguintes temas: Sistemas Operacionais, 
+Sistemas Distribuídos, Aplicações Web e Software Livre.
+
+\item \textbf{Olga N. Goussevskaia}: Possui doutorado em ciência da 
+computação pelo Instituto Federal de Tecnologia Suíço (ETH Zurich, 2009) e 
+mestrado em ciência da computação pela Universidade Federal de Minas Gerais 
+(UFMG, 2005). Atualmente é professora adjunto na Universidade Federal de Minas 
+Gerais. Tem experiência na área de ciência da computação, com ênfase em 
+algoritmos para redes de comunicação sem fio, atuando principalmente nos 
+seguintes temas: complexidade computacional e algoritmos de escalonamento de 
+requisições, algoritmos distribuídos, modelagem de interferência, assim como em 
+temas como análise de redes complexas e aplicativos baseados em dados coletados 
+na web.
+
+\item \textbf{Marcos A. M. Vieira}: possui graduação em Bacharelado em Ciência 
+da Computação pela Universidade Federal de Minas Gerais(2002), mestrado em 
+Ciências da Computação pela Universidade Federal de Minas Gerais(2004), mestrado 
+em Computer Science pela University of Southern California(2007), doutorado em 
+Ciência da Computação pela University of Southern California(2010) e 
+pós-doutorado pela Universidade Federal de Minas Gerais(2011). Atualmente é 
+Professor Adjunto da Universidade Federal de Minas Gerais e bolsista de 
+produtividade nível 2 no CNPq. Tem experiência na área de Ciência da Computação, 
+com ênfase em Sistemas de Computação, atuando principalmente nos temas Rede de 
+Sensores Sem Fio e Robótica.
+
+\item \textbf{Luiz F. M. Vieira}: possui graduação em Ciência da Computação 
+pela Universidade Federal de Minas Gerais(2002), mestrado em Ciências da 
+Computação pela Universidade Federal de Minas Gerais(2004), mestrado em Computer 
+Science pela Computer Science Department - UCLA(2007), doutorado em Computer 
+Science pela Computer Science Department - UCLA(2009) e pós-doutorado pela 
+Universidade Federal de Minas Gerais(2010). Atualmente é Professor Adjunto da 
+Universidade Federal de Minas Gerais, bolsista de produtividade nível 2 no CNPq, 
+Revisor de periódico da IEEE Transactions on Wireless Communications, Revisor de 
+periódico da IEEE Transactions on Mobile Computing, Revisor de periódico da 
+IEEE/ACM Transactions on Networking (Print), Revisor de periódico da Ad Hoc 
+Networks e Revisor de periódico da IEEE Communications Letters (Print).
+
+\item \textbf{Antonio A. F. Loureiro}: possui graduação em Ciência da Computação 
+pela Universidade Federal de Minas Gerais (1983), mestrado em Ciência da 
+Computação pela Universidade Federal de Minas Gerais (1987) e doutorado em 
+Ciência da Computação pela University of British Columbia, Canadá (1995). 
+Atualmente é Professor Titular do Departamento de Ciência da Computação da 
+Universidade Federal de Minas Gerais. Tem experiência na área de Ciência da 
+Computação, com ênfase em sistemas distribuídos, atuando principalmente nos 
+seguintes temas: algoritmos distribuídos, computação móvel/ubíqua, comunicação 
+sem fio, gerenciamento de redes, redes de computadores, redes de sensores sem 
+fio.
+
+\end{itemize}
+
+
+\end{document}
+

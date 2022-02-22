@@ -1,0 +1,85 @@
+\begin{thebibliography}{}
+
+\bibitem[A~Rashid et~al. 2011]{a2011spectrum}
+A~Rashid, R., Sarijari, M.~A., Fisal, N., Lo, A., Yusof, S., Kamilah, S., and
+  Mahalin, N. (2011).
+\newblock Spectrum sensing measurement using gnu radio and usrp software radio
+  platform.
+\newblock In {\em ICWMC 2011, The Seventh International Conference on Wireless
+  and Mobile Communications}, pages 237--242.
+
+\bibitem[Bhat 2011]{bhat2012design}
+Bhat, N.~S. (2011).
+\newblock Design and implementation of ieee 802.15.4 mac protocol on fpga.
+\newblock {\em IJCA Proceedings on Innovative Conference on Embedded Systems,
+  Mobile Communication and Computing (ICEMC2)}, ICEMC2(1):1--5.
+\newblock Full text available.
+
+\bibitem[de~Matos et~al. 2012]{de2012using}
+de~Matos, R., Frohlich, A., and Becker, L.~B. (2012).
+\newblock Using multiple channels to improve sdr flexibility and performance.
+\newblock In {\em Computing, Networking and Communications (ICNC), 2012
+  International Conference on}, pages 1031--1035. IEEE.
+
+\bibitem[Johnson~Jr et~al. 2011]{johnson2011software}
+Johnson~Jr, C.~R., Sethares, W.~A., and Klein, A.~G. (2011).
+\newblock {\em Software Receiver Design: Build your Own Digital Communication
+  System in Five Easy Steps}.
+\newblock Cambridge University Press, 1 edition.
+
+\bibitem[Lin et~al. 2006]{yuan2006soda}
+Lin, Y., Lee, H., Woh, M., Harel, Y., Mahlke, S., Mudge, T., Chakrabarti, C.,
+  and Flautner, K. (2006).
+\newblock Soda: A low-power architecture for software radio.
+\newblock In {\em Computer Architecture, 2006. ISCA '06. 33rd International
+  Symposium on}, pages 89--101.
+
+\bibitem[Meshkova et~al. 2011]{meshkova2011using}
+Meshkova, E., Wangt, Z., Nasreddine, J., Denkovski, D., Zhao, C., Rerkrai, K.,
+  Farnham, T., Ahmad, A., Gefflaut, A., Gavrilovska, L., et~al. (2011).
+\newblock Using cognitive radio principles for wireless resource management in
+  home networking.
+\newblock In {\em Consumer Communications and Networking Conference (CCNC),
+  2011 IEEE}, pages 669--673. IEEE.
+
+\bibitem[Murphy et~al. 2006]{murphy2006design}
+Murphy, P., Sabharwal, A., and Aazhang, B. (2006).
+\newblock Design of warp: a wireless open-access research platform.
+\newblock In {\em European Signal Processing Conference}, pages 1804--1824.
+
+\bibitem[Schmid 2006]{schmid2006gnu}
+Schmid, T. (2006).
+\newblock Gnu radio 802.15. 4 en-and decoding.
+\newblock {\em unpublished document and source}.
+
+\bibitem[Szalontai and Festila 2010]{szalontai2010using}
+Szalontai, L. and Festila, L. (2010).
+\newblock Using software defined radio and cognitive radio technologies in
+  smart home environments.
+\newblock {\em Acta Technica Napocensis}, 51(3).
+
+\bibitem[Tan et~al. 2011]{tan2011sora}
+Tan, K., Liu, H., Zhang, J., Zhang, Y., Fang, J., and Voelker, G.~M. (2011).
+\newblock Sora: High-performance software radio using general-purpose
+  multi-core processors.
+\newblock {\em Commun. ACM}, 54(1):99--107.
+
+\bibitem[Ulversoy 2010]{ulversoy2010software}
+Ulversoy, T. (2010).
+\newblock Software defined radio: Challenges and opportunities.
+\newblock {\em Communications Surveys \& Tutorials, IEEE}, 12(4):531--550.
+
+\bibitem[Wyglinski and Pu 2013]{wyglinski2013digital}
+Wyglinski, A.~M. and Pu, D. (2013).
+\newblock {\em Digital Communication Systems Engineering with Software-Defined
+  Radio}.
+\newblock Artech House.
+
+\bibitem[Zhang et~al. 2011]{zhang2011wireless}
+Zhang, C., Xie, P., Li, D., Zhang, J., and Yu, R. (2011).
+\newblock Wireless home gateway: Software-defined radio architecture and
+  applications.
+\newblock In {\em Communication Technology and Application (ICCTA 2011), IET
+  International Conference on}, pages 346--350.
+
+\end{thebibliography}
