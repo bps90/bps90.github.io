@@ -12,7 +12,7 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "dirt" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "air" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en"
@@ -29,7 +29,7 @@ masthead_title           : # overrides the website title displayed in the masthe
 # breadcrumbs              : true # true, false (default)
 words_per_minute         : 200
 comments:
-  provider               : # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "staticman_v2", "utterances", "custom"
+  provider               : facebook # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
   disqus:
     shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   discourse:
@@ -57,8 +57,9 @@ reCaptcha:
   secret                 :
 atom_feed:
   path                   : # blank (default) uses feed.xml
-search                   : true #, false (default)
-search_full_content      : true #, false (default)
+  hide                   : # true, false (default)
+search                   : # true, false (default)
+search_full_content      : # true, false (default)
 search_provider          : # lunr (default), algolia, google
 algolia:
   application_id         : # YOUR_APPLICATION_ID
@@ -102,14 +103,23 @@ analytics:
 # Site Author
 author:
   name             : "Bruno Pereira dos Santos"
-  avatar           : /assets/images/bio-logo.jpg # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Ph.D. candidate computer science at DCC-UFMG."
-  location         : "Belo Horizonte - MG - Brazil"
-  email            : "bruno.ps@dcc.ufmg.br"
+  avatar           : /assets/images/bio-logo.png # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio              : "Ph.D. in Computer Science at [DCC-UFMG, Brazil, 2019.](https://dcc.ufmg.br/)"
+  #location         : "Belo Horizonte - MG - Brazil"
+  #email            : "bruno.ps@ufop.edu.br"
   links:
-    - label: "Email"
+    - label: "bruno.ps@ufop.edu.br"
       icon: "fas fa-fw fa-envelope-square"
-      # url: "mailto:your.name@email.com"
+      url: "mailto:bruno.ps@ufop.edu.br"
+    - label: "bruno.ps@dcc.ufmg.br"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:bruno.ps@dcc.ufmg.br"
+    - label: "Google Scholar profile"
+      icon: "fa fa-graduation-cap"
+      url: "https://scholar.google.com.br/citations?user=ZsOumAMAAAAJ&hl"
+    - label: "Lattes CV"
+      icon: "fa fa-address-card"
+      url: "http://lattes.cnpq.br/0092226104911153"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
@@ -283,7 +293,7 @@ defaults:
     values:
       layout: single
       author_profile: true
-      read_time: true
+      read_time: false
       comments: true
       share: false
       related: true
