@@ -1,9 +1,0 @@
-- Definições
-- Arquitetura
-- Aplicações
-- Pesquisas (realizadas / em andamento)
-- Plataformas: USRPs
-
-===
-
-- Gnuradio: introdução, GRC, fluxo de trabalho, exemplos (baixo e médio níveis)
