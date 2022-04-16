@@ -196,6 +196,9 @@ keep_files:
 encoding: "utf-8"
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
+#Read js custom script
+head_scripts:
+  - https://unpkg.com/vis-network/standalone/umd/vis-network.min.js
 
 # Conversion
 markdown: kramdown
