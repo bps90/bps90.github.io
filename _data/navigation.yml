@@ -32,7 +32,8 @@ sbrc:
       - title: "Versão estendida"
         url: "#"
       - title: "Apresentação"
-        url: "https://www.dropbox.com/s/yhwbe5uzjm0x7ny/apresentacao-BRUNO_v2.pptx?dl=0"
+        url: "https://docs.google.com/presentation/d/17TW56zIYed5eUlTE3cXNTjpchWeo8GBm/edit?usp=sharing&ouid=107168111322241120444&rtpof=true&sd=true"
+        #url: "https://www.dropbox.com/s/yhwbe5uzjm0x7ny/apresentacao-BRUNO_v2.pptx?dl=0"
       - title: "Hands on"
         url: /iot-hands-on/
       - title: "Leitura extra"
