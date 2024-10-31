@@ -6,7 +6,7 @@ permalink: /bio/
 
 #### Short Bio
 
-He holds a B.S. in Computer Science from [Universidade Estadual de Santa Cruz - UESC](http://www.uesc.br/){: target="\_blank"} (2013), a Master degree in Computer Science from [Universidade Federal de Minas Gerais - UFMG](http://www.dcc.ufmg.br/dcc/){: target="\_blank"} (2015), and now He is a Ph.D. candidate in Computer Science from UFMG (2009). Currently, he is a Professor at UFOP. His main research interest areas are Mobile computing, Ubiquitous computing, Computer Networks, Internet of Things (IoT), Wireless Sensor Networks (WSN), Software Defined Networks (SDN), 5G Networks, Distributed systems/algorithms, Parallel computing/programming, Cyber-physical systems, software, and tools.
+He holds a B.S. in Computer Science from [Universidade Estadual de Santa Cruz - UESC](http://www.uesc.br/){: target="\_blank"} (2013), Master and Ph.D. degrees (2015 and 2019) in Computer Science from [Universidade Federal de Minas Gerais - UFMG](http://www.dcc.ufmg.br/dcc/){: target="\_blank"}. He was professor at [Universidade Federal de Ouro Preto - UFOP](https://ufop.br/){: target="\_blank"} (2019-2022). Currently, he is Professor at [Universidade Federal da Bahia - UFBA](https://www.ufba.br/){: target="\_blank"} (2022-present). His main research interest areas are Computer Networks, Internet of Things (IoT), Wireless Sensor Networks (WSN), Mobile computing, Ubiquitous computing, Software Defined Networks (SDN), 5G Networks, Distributed systems/algorithms, Parallel computing/programming, Cyber-physical systems, software, and tools.
 {: style="text-align: justify; font-size: 14px;"}
 
 <!--
