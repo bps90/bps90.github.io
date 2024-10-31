@@ -21,9 +21,9 @@ function draw() {
 			id: "eu",
 			shape: "circularImage",
 			image: DIR + "bruno.png",
-			label: "Eu (UFOP/UFMG/UESC)",
+			label: "Eu (UFBA/UFOP/UFMG/UESC)",
             color: "#FB7E81",
-            size: 60,
+            size: 70,
 		},
 		{
 			id: "dany",
