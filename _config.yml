@@ -104,13 +104,13 @@ analytics:
 author:
   name             : "Bruno Pereira dos Santos"
   avatar           : /assets/images/bio-logo.png # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Ph.D. in Computer Science at [DCC-UFMG, Brazil, 2019.](https://dcc.ufmg.br/)"
-  #location         : "Belo Horizonte - MG - Brazil"
-  #email            : "bruno.ps@ufop.edu.br"
+  bio              : "Assistant Professor of Computer Science at [DCC-UFBA, Brazil, 2022-current.](https://computacao.ufba.br/)"
+  location         : "Salvador - BA - Brazil"
+  #email            : "bruno.ps@ufba.br"
   links:
-    - label: "bruno.ps@ufop.edu.br"
+    - label: "bruno.ps@ufba.br"
       icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:bruno.ps@ufop.edu.br"
+      url: "mailto:bruno.ps@ufba.br"
     - label: "bruno.ps@dcc.ufmg.br"
       icon: "fas fa-fw fa-envelope-square"
       url: "mailto:bruno.ps@dcc.ufmg.br"
